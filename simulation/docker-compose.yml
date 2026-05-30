@@ -6,7 +6,7 @@ services:
     depends_on:
       - nginx
     environment:
-      TARGET_URL: "http://nginx/"
+      TARGET_URL: "http://nginx:${SHOP_HTTP_PORT:-8080}/"
       USER_REQUEST_INTERVAL_SECONDS: "5"
 
   attacker:
@@ -18,7 +18,7 @@ services:
       - user
     environment:
       ZAP_PORT: "8080"
-      TARGET_URL: "http://nginx/"
+      TARGET_URL: "http://nginx:${SHOP_HTTP_PORT:-8080}/"
       ATTACKER_START_DELAY_SECONDS: "60"
     volumes:
       - ./scripts/zap-scan.sh:/scripts/zap-scan.sh:ro

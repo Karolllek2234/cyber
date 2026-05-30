@@ -3,7 +3,7 @@
 set -euo pipefail
 
 ZAP_PORT="${ZAP_PORT:-8080}"
-TARGET_URL="${TARGET_URL:-http://nginx/}"
+TARGET_URL="${TARGET_URL:-http://nginx:8080/}"
 REPORT_DIR="${REPORT_DIR:-/zap/wrk}"
 REPORT_FILE="${REPORT_FILE:-${REPORT_DIR}/zap-report.html}"
 

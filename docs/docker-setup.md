@@ -14,7 +14,10 @@ Layout:
 - `shop/` — Juice Shop, nginx, Elasticsearch stack
 - `simulation/` — user traffic + ZAP attacker
 
-Optional env (in `simulation/docker-compose.yml` or `.env`):
+Copy `.env.example` to `.env` to override ports (optional):
 
-- `USER_REQUEST_INTERVAL_SECONDS` — pause between browse loops (default `5`)
-- `ATTACKER_START_DELAY_SECONDS` — wait after `user` starts before ZAP daemon (default `60`)
+```bash
+cp .env.example .env
+```
+
+- `SHOP_HTTP_PORT` — nginx listen + host publish port (default `8080`; use a port ≥ 1024 for rootless/userspace Docker)
