@@ -2,7 +2,7 @@
 # Run from the project root after: docker compose up -d
 set -euo pipefail
 
-ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "${ROOT_DIR}"
 
 if ! docker compose exec -T attacker true 2>/dev/null; then
@@ -11,10 +11,10 @@ if ! docker compose exec -T attacker true 2>/dev/null; then
   exit 1
 fi
 
-chmod +x "${ROOT_DIR}/scripts/zap-scan.sh"
+chmod +x "${ROOT_DIR}/simulation/scripts/zap-scan.sh"
 docker compose exec -T attacker /scripts/zap-scan.sh "$@"
 
-REPORT_HOST="${ROOT_DIR}/zap-reports/zap-report.html"
+REPORT_HOST="${ROOT_DIR}/simulation/zap-reports/zap-report.html"
 if [[ -f "${REPORT_HOST}" ]]; then
   echo "Host report path: ${REPORT_HOST}"
 fi

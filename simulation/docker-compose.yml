@@ -1,0 +1,25 @@
+services:
+  user:
+    build:
+      context: ./user
+    container_name: user
+    depends_on:
+      - nginx
+    environment:
+      TARGET_URL: "http://nginx/"
+      USER_REQUEST_INTERVAL_SECONDS: "5"
+
+  attacker:
+    build:
+      context: ./attacker
+    container_name: attacker
+    depends_on:
+      - nginx
+      - user
+    environment:
+      ZAP_PORT: "8080"
+      TARGET_URL: "http://nginx/"
+      ATTACKER_START_DELAY_SECONDS: "60"
+    volumes:
+      - ./scripts/zap-scan.sh:/scripts/zap-scan.sh:ro
+      - ./zap-reports:/zap/wrk
