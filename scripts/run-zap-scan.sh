@@ -5,7 +5,7 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "${ROOT_DIR}"
 
-if ! docker compose ps --status running attacker 2>/dev/null | grep -q attacker; then
+if ! docker compose exec -T attacker true 2>/dev/null; then
   echo "The attacker container is not running. Start the stack first:" >&2
   echo "  docker compose up -d" >&2
   exit 1
