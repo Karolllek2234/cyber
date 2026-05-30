@@ -2,6 +2,12 @@
 set -euo pipefail
 
 ZAP_PORT="${ZAP_PORT:-8080}"
+ATTACKER_START_DELAY_SECONDS="${ATTACKER_START_DELAY_SECONDS:-60}"
+
+if [ "${ATTACKER_START_DELAY_SECONDS}" -gt 0 ]; then
+  echo "Waiting ${ATTACKER_START_DELAY_SECONDS}s for user traffic before starting ZAP..."
+  sleep "${ATTACKER_START_DELAY_SECONDS}"
+fi
 
 echo "Starting ZAP daemon on port ${ZAP_PORT}..."
 /zap/zap.sh -daemon \
