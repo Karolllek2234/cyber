@@ -24,4 +24,4 @@ services:
       SIMULATED_TRAFFIC_TRIGGER: ${SIMULATED_TRAFFIC_TRIGGER:-false}
     volumes:
       - ./scripts/zap-scan.sh:/scripts/zap-scan.sh:ro
-      - ./zap-reports:/zap/wrk
+      - ./outputs:/outputs

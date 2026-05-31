@@ -14,7 +14,7 @@ fi
 chmod +x "${ROOT_DIR}/simulation/scripts/zap-scan.sh"
 docker compose exec -T attacker /scripts/zap-scan.sh "$@"
 
-REPORT_HOST="${ROOT_DIR}/simulation/zap-reports/zap-report.html"
+REPORT_HOST="${ROOT_DIR}/simulation/outputs/zap-report.html"
 if [[ -f "${REPORT_HOST}" ]]; then
   echo "Host report path: ${REPORT_HOST}"
 fi

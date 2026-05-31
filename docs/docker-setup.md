@@ -7,7 +7,7 @@ cp .env.example .env   # optional
 docker compose up -d --build
 ```
 
-Report: `simulation/zap-reports/zap-report.html`
+Artifacts: `simulation/outputs/` (e.g. `zap-report.html`)
 
 ## Scan trigger
 
