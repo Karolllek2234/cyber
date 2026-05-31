@@ -2,11 +2,19 @@
 set -euo pipefail
 
 ZAP_PORT="${ZAP_PORT:-8080}"
-ATTACKER_START_DELAY_SECONDS="${ATTACKER_START_DELAY_SECONDS:-60}"
+SIMULATED_TRAFFIC_ATTACKER="${SIMULATED_TRAFFIC_ATTACKER:-60}"
+SIMULATED_TRAFFIC_TRIGGER="${SIMULATED_TRAFFIC_TRIGGER:-false}"
 
-if [ "${ATTACKER_START_DELAY_SECONDS}" -gt 0 ]; then
-  echo "Waiting ${ATTACKER_START_DELAY_SECONDS}s for user traffic before starting ZAP..."
-  sleep "${ATTACKER_START_DELAY_SECONDS}"
+traffic_trigger_enabled() {
+  case "${SIMULATED_TRAFFIC_TRIGGER}" in
+    true | TRUE | 1 | yes | YES) return 0 ;;
+    *) return 1 ;;
+  esac
+}
+
+if [ "${SIMULATED_TRAFFIC_ATTACKER}" -gt 0 ]; then
+  echo "Waiting ${SIMULATED_TRAFFIC_ATTACKER}s before starting ZAP (SIMULATED_TRAFFIC_ATTACKER)..."
+  sleep "${SIMULATED_TRAFFIC_ATTACKER}"
 fi
 
 echo "Starting ZAP daemon on port ${ZAP_PORT}..."
@@ -30,6 +38,11 @@ done
 if ! curl -sf "http://127.0.0.1:${ZAP_PORT}/JSON/core/view/version/" >/dev/null; then
   echo "ZAP failed to start within the expected time." >&2
   exit 1
+fi
+
+if traffic_trigger_enabled; then
+  echo "SIMULATED_TRAFFIC_TRIGGER enabled — running ZAP scan..."
+  bash /scripts/zap-scan.sh
 fi
 
 exec tail -f /dev/null

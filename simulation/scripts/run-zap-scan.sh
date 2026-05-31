@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Run from the project root after: docker compose up -d
+# Run from the project root when SIMULATED_TRAFFIC_TRIGGER=false
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
