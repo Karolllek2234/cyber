@@ -9,27 +9,9 @@ docker compose up -d --build
 
 Artifacts: `simulation/outputs/` (e.g. `zap-report.html`)
 
-## Scan trigger
-
-| `SIMULATED_TRAFFIC_TRIGGER` | Behaviour |
-|-----------------------------|-----------|
-| `false` (default) | Run the scan manually: `./simulation/scripts/run-zap-scan.sh` |
-| `true` | Scan runs automatically after ZAP is ready and `SIMULATED_TRAFFIC_ATTACKER_DELAY` elapses |
-
-## Simulation timing
-
-| Variable | Default | Meaning |
-|----------|---------|---------|
-| `SIMULATED_TRAFFIC_USER` | `0` | Seconds to wait after the shop is up before user browsing starts |
-| `SIMULATED_TRAFFIC_ATTACKER` | `60` | Seconds to wait before the ZAP daemon starts |
-| `SIMULATED_TRAFFIC_ATTACKER_DELAY` | `60` | Seconds to wait after ZAP is ready before the simulated attack runs |
-| `USER_REQUEST_INTERVAL_SECONDS` | `5` | Pause between user browse loops |
+Environment variables are documented in [docker-env.md](docker-env.md).
 
 ## Layout
 
 - `shop/` — Juice Shop, nginx, Elasticsearch stack
 - `simulation/` — user traffic + ZAP attacker
-
-## Ports
-
-- `SHOP_HTTP_PORT` — nginx listen + host publish port (default `8080`)
