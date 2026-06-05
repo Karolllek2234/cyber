@@ -1,6 +1,5 @@
-
 server {
-    listen 80;
+    listen ${SHOP_HTTP_PORT};
 
     access_log /var/log/nginx/access.log;
     error_log /var/log/nginx/error.log;
@@ -9,4 +8,3 @@ server {
         proxy_pass http://juice-shop:3000;
     }
 }
-
