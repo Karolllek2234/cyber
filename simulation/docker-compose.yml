@@ -21,6 +21,7 @@ services:
       ZAP_PORT: "8080"
       TARGET_URL: "http://nginx:${SHOP_HTTP_PORT:-8080}/"
       SIMULATED_TRAFFIC_ATTACKER: ${SIMULATED_TRAFFIC_ATTACKER:-60}
+      SIMULATED_TRAFFIC_ATTACKER_DELAY: ${SIMULATED_TRAFFIC_ATTACKER_DELAY:-60}
       SIMULATED_TRAFFIC_TRIGGER: ${SIMULATED_TRAFFIC_TRIGGER:-false}
     volumes:
       - ./scripts/zap-scan.sh:/scripts/zap-scan.sh:ro

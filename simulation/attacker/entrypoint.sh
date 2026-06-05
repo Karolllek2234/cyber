@@ -3,6 +3,7 @@ set -euo pipefail
 
 ZAP_PORT="${ZAP_PORT:-8080}"
 SIMULATED_TRAFFIC_ATTACKER="${SIMULATED_TRAFFIC_ATTACKER:-60}"
+SIMULATED_TRAFFIC_ATTACKER_DELAY="${SIMULATED_TRAFFIC_ATTACKER_DELAY:-60}"
 SIMULATED_TRAFFIC_TRIGGER="${SIMULATED_TRAFFIC_TRIGGER:-false}"
 
 traffic_trigger_enabled() {
@@ -41,6 +42,10 @@ if ! curl -sf "http://127.0.0.1:${ZAP_PORT}/JSON/core/view/version/" >/dev/null;
 fi
 
 if traffic_trigger_enabled; then
+  if [ "${SIMULATED_TRAFFIC_ATTACKER_DELAY}" -gt 0 ]; then
+    echo "Waiting ${SIMULATED_TRAFFIC_ATTACKER_DELAY}s before simulated attack (SIMULATED_TRAFFIC_ATTACKER_DELAY)..."
+    sleep "${SIMULATED_TRAFFIC_ATTACKER_DELAY}"
+  fi
   echo "SIMULATED_TRAFFIC_TRIGGER enabled — running ZAP scan..."
   bash /scripts/zap-scan.sh
 fi
