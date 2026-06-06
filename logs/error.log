@@ -122,3 +122,1141 @@
 2026/05/29 21:26:51 [error] 30#30: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /search/socket.io/?EIO=4&transport=polling&t=PvreVvJ HTTP/1.1", upstream: "http://172.20.0.3:3000/search/socket.io/?EIO=4&transport=polling&t=PvreVvJ", host: "localhost", referrer: "http://localhost/search?q=%3Cscript%3Ealert(1)%3C/script%3E"
 2026/05/29 21:26:54 [error] 30#30: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PvreWeA HTTP/1.1", upstream: "http://172.20.0.3:3000/socket.io/?EIO=4&transport=polling&t=PvreWeA", host: "localhost", referrer: "http://localhost/"
 2026/05/29 21:26:54 [error] 30#30: *2 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /search/socket.io/?EIO=4&transport=polling&t=PvreWeC HTTP/1.1", upstream: "http://172.20.0.3:3000/search/socket.io/?EIO=4&transport=polling&t=PvreWeC", host: "localhost", referrer: "http://localhost/search?q=%3Cscript%3Ealert(1)%3C/script%3E"
+2026/05/29 22:13:03 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/05/29 22:13:03 [notice] 33#33: gracefully shutting down
+2026/05/29 22:13:03 [notice] 28#28: gracefully shutting down
+2026/05/29 22:13:03 [notice] 31#31: gracefully shutting down
+2026/05/29 22:13:03 [notice] 29#29: gracefully shutting down
+2026/05/29 22:13:03 [notice] 35#35: gracefully shutting down
+2026/05/29 22:13:03 [notice] 30#30: gracefully shutting down
+2026/05/29 22:13:03 [notice] 33#33: exiting
+2026/05/29 22:13:04 [notice] 34#34: gracefully shutting down
+2026/05/29 22:13:03 [notice] 31#31: exiting
+2026/05/29 22:13:04 [notice] 32#32: gracefully shutting down
+2026/05/29 22:13:03 [notice] 28#28: exiting
+2026/05/29 22:13:03 [notice] 29#29: exiting
+2026/05/29 22:13:03 [notice] 28#28: exit
+2026/05/29 22:13:03 [notice] 33#33: exit
+2026/05/29 22:13:03 [notice] 31#31: exit
+2026/05/29 22:13:04 [notice] 32#32: exiting
+2026/05/29 22:13:03 [notice] 29#29: exit
+2026/05/29 22:13:03 [notice] 30#30: exiting
+2026/05/29 22:13:03 [notice] 30#30: exit
+2026/05/29 22:13:04 [notice] 32#32: exit
+2026/05/29 22:13:04 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2026/05/29 22:13:04 [notice] 1#1: worker process 32 exited with code 0
+2026/05/29 22:13:04 [notice] 1#1: signal 29 (SIGIO) received
+2026/05/29 22:13:04 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2026/05/29 22:13:04 [notice] 1#1: worker process 31 exited with code 0
+2026/05/29 22:13:04 [notice] 1#1: signal 29 (SIGIO) received
+2026/05/29 22:13:04 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2026/05/29 22:13:04 [notice] 1#1: worker process 29 exited with code 0
+2026/05/29 22:13:04 [notice] 1#1: signal 29 (SIGIO) received
+2026/05/29 22:13:04 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2026/05/29 22:13:04 [notice] 1#1: worker process 28 exited with code 0
+2026/05/29 22:13:04 [notice] 1#1: worker process 33 exited with code 0
+2026/05/29 22:13:04 [notice] 1#1: worker process 30 exited with code 0
+2026/05/29 22:13:04 [notice] 1#1: signal 29 (SIGIO) received
+2026/05/29 22:13:04 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/05/29 22:13:10 [notice] 1#1: using the "epoll" event method
+2026/05/29 22:13:10 [notice] 1#1: nginx/1.31.1
+2026/05/29 22:13:10 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/05/29 22:13:10 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/05/29 22:13:10 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/05/29 22:13:10 [notice] 1#1: start worker processes
+2026/05/29 22:13:10 [notice] 1#1: start worker process 28
+2026/05/29 22:13:10 [notice] 1#1: start worker process 29
+2026/05/29 22:13:10 [notice] 1#1: start worker process 30
+2026/05/29 22:13:10 [notice] 1#1: start worker process 31
+2026/05/29 22:13:10 [notice] 1#1: start worker process 32
+2026/05/29 22:13:10 [notice] 1#1: start worker process 33
+2026/05/29 22:13:10 [notice] 1#1: start worker process 34
+2026/05/29 22:13:10 [notice] 1#1: start worker process 35
+2026/05/29 22:13:11 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=Pvrp6cv HTTP/1.1", upstream: "http://172.20.0.3:3000/socket.io/?EIO=4&transport=polling&t=Pvrp6cv", host: "localhost", referrer: "http://localhost/"
+2026/05/29 22:13:12 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=Pvrp6sb HTTP/1.1", upstream: "http://172.20.0.3:3000/socket.io/?EIO=4&transport=polling&t=Pvrp6sb", host: "localhost", referrer: "http://localhost/"
+2026/05/29 22:13:14 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/05/29 22:13:14 [notice] 28#28: gracefully shutting down
+2026/05/29 22:13:14 [notice] 31#31: gracefully shutting down
+2026/05/29 22:13:14 [notice] 31#31: exiting
+2026/05/29 22:13:14 [notice] 34#34: gracefully shutting down
+2026/05/29 22:13:14 [notice] 34#34: exiting
+2026/05/29 22:13:14 [notice] 29#29: gracefully shutting down
+2026/05/29 22:13:14 [notice] 29#29: exiting
+2026/05/29 22:13:14 [notice] 32#32: gracefully shutting down
+2026/05/29 22:13:14 [notice] 32#32: exiting
+2026/05/29 22:13:14 [notice] 33#33: gracefully shutting down
+2026/05/29 22:13:14 [notice] 33#33: exiting
+2026/05/29 22:13:14 [notice] 30#30: gracefully shutting down
+2026/05/29 22:13:14 [notice] 30#30: exiting
+2026/05/29 22:13:14 [notice] 35#35: gracefully shutting down
+2026/05/29 22:13:14 [notice] 35#35: exiting
+2026/05/29 22:13:14 [notice] 28#28: exiting
+2026/05/29 22:13:14 [notice] 31#31: exit
+2026/05/29 22:13:14 [notice] 34#34: exit
+2026/05/29 22:13:14 [notice] 28#28: exit
+2026/05/29 22:13:14 [notice] 29#29: exit
+2026/05/29 22:13:14 [notice] 32#32: exit
+2026/05/29 22:13:14 [notice] 33#33: exit
+2026/05/29 22:13:14 [notice] 30#30: exit
+2026/05/29 22:13:14 [notice] 35#35: exit
+2026/05/29 22:13:14 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2026/05/29 22:13:14 [notice] 1#1: worker process 28 exited with code 0
+2026/05/29 22:13:14 [notice] 1#1: worker process 32 exited with code 0
+2026/05/29 22:13:14 [notice] 1#1: signal 29 (SIGIO) received
+2026/05/29 22:13:14 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2026/05/29 22:13:14 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2026/05/29 22:13:14 [notice] 1#1: worker process 29 exited with code 0
+2026/05/29 22:13:14 [notice] 1#1: worker process 34 exited with code 0
+2026/05/29 22:13:14 [notice] 1#1: worker process 31 exited with code 0
+2026/05/29 22:13:14 [notice] 1#1: signal 29 (SIGIO) received
+2026/05/29 22:13:14 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2026/05/29 22:13:14 [notice] 1#1: worker process 30 exited with code 0
+2026/05/29 22:13:14 [notice] 1#1: worker process 33 exited with code 0
+2026/05/29 22:13:14 [notice] 1#1: worker process 35 exited with code 0
+2026/05/29 22:13:14 [notice] 1#1: exit
+2026/05/30 12:04:57 [notice] 1#1: using the "epoll" event method
+2026/05/30 12:04:57 [notice] 1#1: nginx/1.31.1
+2026/05/30 12:04:57 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/05/30 12:04:57 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/05/30 12:04:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/05/30 12:04:57 [notice] 1#1: start worker processes
+2026/05/30 12:04:57 [notice] 1#1: start worker process 28
+2026/05/30 12:04:57 [notice] 1#1: start worker process 29
+2026/05/30 12:04:57 [notice] 1#1: start worker process 30
+2026/05/30 12:04:57 [notice] 1#1: start worker process 31
+2026/05/30 12:04:57 [notice] 1#1: start worker process 32
+2026/05/30 12:04:57 [notice] 1#1: start worker process 33
+2026/05/30 12:04:57 [notice] 1#1: start worker process 34
+2026/05/30 12:04:57 [notice] 1#1: start worker process 35
+2026/06/06 08:57:11 [notice] 1#1: using the "epoll" event method
+2026/06/06 08:57:11 [notice] 1#1: nginx/1.31.1
+2026/06/06 08:57:11 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/06/06 08:57:11 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/06/06 08:57:11 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/06/06 08:57:11 [notice] 1#1: start worker processes
+2026/06/06 08:57:11 [notice] 1#1: start worker process 28
+2026/06/06 08:57:11 [notice] 1#1: start worker process 29
+2026/06/06 08:57:11 [notice] 1#1: start worker process 30
+2026/06/06 08:57:11 [notice] 1#1: start worker process 31
+2026/06/06 08:57:11 [notice] 1#1: start worker process 32
+2026/06/06 08:57:11 [notice] 1#1: start worker process 33
+2026/06/06 08:57:11 [notice] 1#1: start worker process 34
+2026/06/06 08:57:11 [notice] 1#1: start worker process 35
+2026/06/06 09:11:01 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/06/06 09:11:01 [notice] 29#29: gracefully shutting down
+2026/06/06 09:11:01 [notice] 31#31: gracefully shutting down
+2026/06/06 09:11:01 [notice] 29#29: exiting
+2026/06/06 09:11:01 [notice] 30#30: gracefully shutting down
+2026/06/06 09:11:01 [notice] 32#32: gracefully shutting down
+2026/06/06 09:11:01 [notice] 32#32: exiting
+2026/06/06 09:11:01 [notice] 33#33: gracefully shutting down
+2026/06/06 09:11:01 [notice] 28#28: gracefully shutting down
+2026/06/06 09:11:01 [notice] 33#33: exiting
+2026/06/06 09:11:01 [notice] 34#34: gracefully shutting down
+2026/06/06 09:11:01 [notice] 33#33: exit
+2026/06/06 09:11:01 [notice] 35#35: gracefully shutting down
+2026/06/06 09:11:01 [notice] 31#31: exiting
+2026/06/06 09:11:01 [notice] 29#29: exit
+2026/06/06 09:11:01 [notice] 31#31: exit
+2026/06/06 09:11:01 [notice] 32#32: exit
+2026/06/06 09:11:01 [notice] 28#28: exiting
+2026/06/06 09:11:01 [notice] 34#34: exiting
+2026/06/06 09:11:01 [notice] 35#35: exiting
+2026/06/06 09:11:01 [notice] 34#34: exit
+2026/06/06 09:11:01 [notice] 28#28: exit
+2026/06/06 09:11:01 [notice] 35#35: exit
+2026/06/06 09:11:01 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2026/06/06 09:11:01 [notice] 1#1: worker process 28 exited with code 0
+2026/06/06 09:11:01 [notice] 1#1: worker process 29 exited with code 0
+2026/06/06 09:11:01 [notice] 1#1: worker process 31 exited with code 0
+2026/06/06 09:11:01 [notice] 1#1: worker process 32 exited with code 0
+2026/06/06 09:11:01 [notice] 1#1: worker process 33 exited with code 0
+2026/06/06 09:11:01 [notice] 1#1: worker process 34 exited with code 0
+2026/06/06 09:11:01 [notice] 1#1: worker process 35 exited with code 0
+2026/06/06 09:11:01 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 09:11:01 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2026/06/06 09:11:17 [notice] 1#1: using the "epoll" event method
+2026/06/06 09:11:17 [notice] 1#1: nginx/1.31.1
+2026/06/06 09:11:17 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/06/06 09:11:17 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/06/06 09:11:17 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/06/06 09:11:17 [notice] 1#1: start worker processes
+2026/06/06 09:11:17 [notice] 1#1: start worker process 28
+2026/06/06 09:11:17 [notice] 1#1: start worker process 29
+2026/06/06 09:11:17 [notice] 1#1: start worker process 30
+2026/06/06 09:11:17 [notice] 1#1: start worker process 31
+2026/06/06 09:11:17 [notice] 1#1: start worker process 32
+2026/06/06 09:11:17 [notice] 1#1: start worker process 33
+2026/06/06 09:11:17 [notice] 1#1: start worker process 34
+2026/06/06 09:11:17 [notice] 1#1: start worker process 35
+2026/06/06 09:11:20 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /search/socket.io/?EIO=4&transport=polling&t=PwSCtkP HTTP/1.1", upstream: "http://172.20.0.2:3000/search/socket.io/?EIO=4&transport=polling&t=PwSCtkP", host: "localhost", referrer: "http://localhost/search?q=%3Cscript%3Ealert(1)%3C/script%3E"
+2026/06/06 09:11:20 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwSCtkk HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwSCtkk", host: "localhost", referrer: "http://localhost/"
+2026/06/06 09:11:32 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/06/06 09:11:32 [notice] 28#28: gracefully shutting down
+2026/06/06 09:11:32 [notice] 35#35: gracefully shutting down
+2026/06/06 09:11:32 [notice] 29#29: gracefully shutting down
+2026/06/06 09:11:32 [notice] 30#30: gracefully shutting down
+2026/06/06 09:11:32 [notice] 31#31: gracefully shutting down
+2026/06/06 09:11:32 [notice] 34#34: gracefully shutting down
+2026/06/06 09:11:32 [notice] 34#34: exiting
+2026/06/06 09:11:32 [notice] 34#34: exit
+2026/06/06 09:11:32 [notice] 33#33: gracefully shutting down
+2026/06/06 09:11:32 [notice] 32#32: gracefully shutting down
+2026/06/06 09:11:32 [notice] 28#28: exiting
+2026/06/06 09:11:32 [notice] 35#35: exiting
+2026/06/06 09:11:32 [notice] 29#29: exiting
+2026/06/06 09:11:32 [notice] 30#30: exiting
+2026/06/06 09:11:32 [notice] 33#33: exiting
+2026/06/06 09:11:32 [notice] 32#32: exiting
+2026/06/06 09:11:32 [notice] 28#28: exit
+2026/06/06 09:11:32 [notice] 35#35: exit
+2026/06/06 09:11:32 [notice] 29#29: exit
+2026/06/06 09:11:32 [notice] 30#30: exit
+2026/06/06 09:11:32 [notice] 33#33: exit
+2026/06/06 09:11:32 [notice] 32#32: exit
+2026/06/06 09:11:32 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2026/06/06 09:11:32 [notice] 1#1: worker process 34 exited with code 0
+2026/06/06 09:11:32 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 09:11:32 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2026/06/06 09:11:32 [notice] 1#1: worker process 28 exited with code 0
+2026/06/06 09:11:32 [notice] 1#1: worker process 29 exited with code 0
+2026/06/06 09:11:32 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 09:11:32 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2026/06/06 09:11:32 [notice] 1#1: worker process 33 exited with code 0
+2026/06/06 09:11:32 [notice] 1#1: worker process 35 exited with code 0
+2026/06/06 09:11:32 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 09:11:32 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/06/06 09:11:32 [notice] 1#1: worker process 30 exited with code 0
+2026/06/06 09:11:32 [notice] 1#1: worker process 32 exited with code 0
+2026/06/06 09:11:32 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 09:11:38 [notice] 1#1: using the "epoll" event method
+2026/06/06 09:11:38 [notice] 1#1: nginx/1.31.1
+2026/06/06 09:11:38 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/06/06 09:11:38 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/06/06 09:11:38 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/06/06 09:11:38 [notice] 1#1: start worker processes
+2026/06/06 09:11:38 [notice] 1#1: start worker process 28
+2026/06/06 09:11:38 [notice] 1#1: start worker process 29
+2026/06/06 09:11:38 [notice] 1#1: start worker process 30
+2026/06/06 09:11:38 [notice] 1#1: start worker process 31
+2026/06/06 09:11:38 [notice] 1#1: start worker process 32
+2026/06/06 09:11:38 [notice] 1#1: start worker process 33
+2026/06/06 09:11:38 [notice] 1#1: start worker process 34
+2026/06/06 09:11:38 [notice] 1#1: start worker process 35
+2026/06/06 09:11:39 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /search/socket.io/?EIO=4&transport=polling&t=PwSCy7m HTTP/1.1", upstream: "http://172.20.0.2:3000/search/socket.io/?EIO=4&transport=polling&t=PwSCy7m", host: "localhost", referrer: "http://localhost/search?q=%3Cscript%3Ealert(1)%3C/script%3E"
+2026/06/06 09:11:40 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwSCyd5 HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwSCyd5", host: "localhost", referrer: "http://localhost/"
+2026/06/06 09:11:43 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwSCzLr HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwSCzLr", host: "localhost", referrer: "http://localhost/"
+2026/06/06 09:11:44 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /search/socket.io/?EIO=4&transport=polling&t=PwSCzbb HTTP/1.1", upstream: "http://172.20.0.2:3000/search/socket.io/?EIO=4&transport=polling&t=PwSCzbb", host: "localhost", referrer: "http://localhost/search?q=%3Cscript%3Ealert(1)%3C/script%3E"
+2026/06/06 16:37:26 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/06/06 16:37:26 [notice] 28#28: gracefully shutting down
+2026/06/06 16:37:26 [notice] 30#30: gracefully shutting down
+2026/06/06 16:37:26 [notice] 34#34: gracefully shutting down
+2026/06/06 16:37:26 [notice] 29#29: gracefully shutting down
+2026/06/06 16:37:26 [notice] 32#32: gracefully shutting down
+2026/06/06 16:37:26 [notice] 28#28: exiting
+2026/06/06 16:37:26 [notice] 31#31: gracefully shutting down
+2026/06/06 16:37:26 [notice] 33#33: gracefully shutting down
+2026/06/06 16:37:26 [notice] 31#31: exiting
+2026/06/06 16:37:26 [notice] 35#35: gracefully shutting down
+2026/06/06 16:37:26 [notice] 29#29: exiting
+2026/06/06 16:37:26 [notice] 29#29: exit
+2026/06/06 16:37:26 [notice] 30#30: exiting
+2026/06/06 16:37:26 [notice] 32#32: exiting
+2026/06/06 16:37:26 [notice] 28#28: exit
+2026/06/06 16:37:26 [notice] 35#35: exiting
+2026/06/06 16:37:26 [notice] 31#31: exit
+2026/06/06 16:37:26 [notice] 33#33: exiting
+2026/06/06 16:37:26 [notice] 32#32: exit
+2026/06/06 16:37:26 [notice] 30#30: exit
+2026/06/06 16:37:26 [notice] 35#35: exit
+2026/06/06 16:37:26 [notice] 33#33: exit
+2026/06/06 16:37:26 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/06/06 16:37:26 [notice] 1#1: worker process 29 exited with code 0
+2026/06/06 16:37:26 [notice] 1#1: worker process 30 exited with code 0
+2026/06/06 16:37:26 [notice] 1#1: worker process 32 exited with code 0
+2026/06/06 16:37:26 [notice] 1#1: worker process 33 exited with code 0
+2026/06/06 16:37:26 [notice] 1#1: worker process 28 exited with code 0
+2026/06/06 16:37:26 [notice] 1#1: worker process 35 exited with code 0
+2026/06/06 16:37:26 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 16:37:26 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2026/06/06 16:37:26 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2026/06/06 16:37:26 [notice] 1#1: worker process 31 exited with code 0
+2026/06/06 16:37:26 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 16:37:26 [error] 34#34: *7837 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTovHf&sid=x3C-71EHOaVYIy-kAAAg HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTovHf&sid=x3C-71EHOaVYIy-kAAAg", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 16:37:26 [error] 34#34: *7870 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwToysM.0&sid=3kcYHXpJDBh-7uf2AAA5 HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwToysM.0&sid=3kcYHXpJDBh-7uf2AAA5", host: "localhost", referrer: "http://localhost/"
+2026/06/06 16:37:26 [notice] 34#34: exiting
+2026/06/06 16:37:26 [notice] 34#34: exit
+2026/06/06 16:37:26 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2026/06/06 16:37:26 [notice] 1#1: worker process 34 exited with code 0
+2026/06/06 16:37:26 [notice] 1#1: exit
+2026/06/06 16:37:27 [notice] 1#1: using the "epoll" event method
+2026/06/06 16:37:27 [notice] 1#1: nginx/1.31.1
+2026/06/06 16:37:27 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/06/06 16:37:27 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/06/06 16:37:27 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/06/06 16:37:27 [notice] 1#1: start worker processes
+2026/06/06 16:37:27 [notice] 1#1: start worker process 28
+2026/06/06 16:37:27 [notice] 1#1: start worker process 29
+2026/06/06 16:37:27 [notice] 1#1: start worker process 30
+2026/06/06 16:37:27 [notice] 1#1: start worker process 31
+2026/06/06 16:37:27 [notice] 1#1: start worker process 32
+2026/06/06 16:37:27 [notice] 1#1: start worker process 33
+2026/06/06 16:37:27 [notice] 1#1: start worker process 34
+2026/06/06 16:37:27 [notice] 1#1: start worker process 35
+2026/06/06 16:37:27 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTo-eu HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTo-eu", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 16:37:28 [error] 30#30: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTo-ue HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTo-ue", host: "localhost", referrer: "http://localhost/"
+2026/06/06 16:37:30 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTo_Nj HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTo_Nj", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 16:37:31 [error] 30#30: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTo_dU HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTo_dU", host: "localhost", referrer: "http://localhost/"
+2026/06/06 16:37:35 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTp0c2 HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTp0c2", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 16:37:35 [error] 30#30: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTp0bz HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTp0bz", host: "localhost", referrer: "http://localhost/"
+2026/06/06 16:38:20 [error] 34#34: *41 open() "/etc/nginx/html/ftp/legal.md" failed (2: No such file or directory), client: 172.20.0.1, server: , request: "GET /ftp/legal.md HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2026/06/06 16:38:22 [error] 31#31: *36 open() "/etc/nginx/html/ftp/legal.md" failed (2: No such file or directory), client: 172.20.0.1, server: , request: "GET /ftp/legal.md HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2026/06/06 16:38:24 [error] 34#34: *41 open() "/etc/nginx/html/ftp/legal.md" failed (2: No such file or directory), client: 172.20.0.1, server: , request: "GET /ftp/legal.md HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2026/06/06 16:38:29 [error] 28#28: *105 open() "/etc/nginx/html/ftp" failed (2: No such file or directory), client: 172.20.0.1, server: , request: "GET /ftp HTTP/1.1", host: "localhost"
+2026/06/06 16:38:33 [error] 34#34: *41 open() "/etc/nginx/html/ftp/legal.md" failed (2: No such file or directory), client: 172.20.0.1, server: , request: "GET /ftp/legal.md HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2026/06/06 16:40:02 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/06/06 16:40:02 [notice] 28#28: gracefully shutting down
+2026/06/06 16:40:02 [notice] 34#34: gracefully shutting down
+2026/06/06 16:40:02 [notice] 29#29: gracefully shutting down
+2026/06/06 16:40:02 [notice] 34#34: exiting
+2026/06/06 16:40:02 [notice] 30#30: gracefully shutting down
+2026/06/06 16:40:02 [notice] 34#34: exit
+2026/06/06 16:40:02 [notice] 31#31: gracefully shutting down
+2026/06/06 16:40:02 [notice] 32#32: gracefully shutting down
+2026/06/06 16:40:02 [notice] 33#33: gracefully shutting down
+2026/06/06 16:40:02 [notice] 33#33: exiting
+2026/06/06 16:40:02 [notice] 35#35: gracefully shutting down
+2026/06/06 16:40:02 [notice] 28#28: exiting
+2026/06/06 16:40:02 [notice] 35#35: exiting
+2026/06/06 16:40:02 [notice] 30#30: exiting
+2026/06/06 16:40:02 [notice] 30#30: exit
+2026/06/06 16:40:02 [notice] 31#31: exiting
+2026/06/06 16:40:02 [notice] 32#32: exiting
+2026/06/06 16:40:02 [notice] 33#33: exit
+2026/06/06 16:40:02 [notice] 28#28: exit
+2026/06/06 16:40:02 [notice] 35#35: exit
+2026/06/06 16:40:02 [notice] 31#31: exit
+2026/06/06 16:40:02 [notice] 32#32: exit
+2026/06/06 16:40:02 [error] 29#29: *3 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTpWc2.0&sid=75ALoxZ5-mcrsCHTAAAA HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTpWc2.0&sid=75ALoxZ5-mcrsCHTAAAA", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 16:40:02 [notice] 29#29: exiting
+2026/06/06 16:40:02 [notice] 29#29: exit
+2026/06/06 16:40:02 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2026/06/06 16:40:02 [notice] 1#1: worker process 28 exited with code 0
+2026/06/06 16:40:02 [notice] 1#1: worker process 30 exited with code 0
+2026/06/06 16:40:02 [notice] 1#1: worker process 31 exited with code 0
+2026/06/06 16:40:02 [notice] 1#1: worker process 34 exited with code 0
+2026/06/06 16:40:02 [notice] 1#1: worker process 35 exited with code 0
+2026/06/06 16:40:02 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 16:40:02 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2026/06/06 16:40:02 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2026/06/06 16:40:02 [notice] 1#1: worker process 33 exited with code 0
+2026/06/06 16:40:02 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 16:40:02 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2026/06/06 16:40:02 [notice] 1#1: worker process 32 exited with code 0
+2026/06/06 16:40:02 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 16:40:02 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2026/06/06 16:40:02 [notice] 1#1: worker process 29 exited with code 0
+2026/06/06 16:40:02 [notice] 1#1: exit
+2026/06/06 16:40:03 [notice] 1#1: using the "epoll" event method
+2026/06/06 16:40:03 [notice] 1#1: nginx/1.31.1
+2026/06/06 16:40:03 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/06/06 16:40:03 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/06/06 16:40:03 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/06/06 16:40:03 [notice] 1#1: start worker processes
+2026/06/06 16:40:03 [notice] 1#1: start worker process 28
+2026/06/06 16:40:03 [notice] 1#1: start worker process 29
+2026/06/06 16:40:03 [notice] 1#1: start worker process 30
+2026/06/06 16:40:03 [notice] 1#1: start worker process 31
+2026/06/06 16:40:03 [notice] 1#1: start worker process 32
+2026/06/06 16:40:03 [notice] 1#1: start worker process 33
+2026/06/06 16:40:03 [notice] 1#1: start worker process 34
+2026/06/06 16:40:03 [notice] 1#1: start worker process 35
+2026/06/06 16:40:04 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTpa-4 HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTpa-4", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 16:40:06 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTpbTN HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTpbTN", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 16:40:09 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTpcC3 HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTpcC3", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 16:42:41 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/06/06 16:42:41 [notice] 31#31: gracefully shutting down
+2026/06/06 16:42:41 [notice] 29#29: gracefully shutting down
+2026/06/06 16:42:41 [notice] 29#29: exiting
+2026/06/06 16:42:41 [notice] 29#29: exit
+2026/06/06 16:42:41 [notice] 30#30: gracefully shutting down
+2026/06/06 16:42:41 [notice] 28#28: gracefully shutting down
+2026/06/06 16:42:41 [notice] 32#32: gracefully shutting down
+2026/06/06 16:42:41 [notice] 35#35: gracefully shutting down
+2026/06/06 16:42:41 [notice] 33#33: gracefully shutting down
+2026/06/06 16:42:41 [notice] 34#34: gracefully shutting down
+2026/06/06 16:42:41 [notice] 34#34: exiting
+2026/06/06 16:42:41 [notice] 31#31: exiting
+2026/06/06 16:42:41 [notice] 28#28: exiting
+2026/06/06 16:42:41 [notice] 28#28: exit
+2026/06/06 16:42:41 [notice] 32#32: exiting
+2026/06/06 16:42:41 [notice] 32#32: exit
+2026/06/06 16:42:41 [notice] 35#35: exiting
+2026/06/06 16:42:41 [notice] 35#35: exit
+2026/06/06 16:42:41 [error] 30#30: *9 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTq6Cc&sid=GV3RHpP2uRg_EIhuAAAA HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTq6Cc&sid=GV3RHpP2uRg_EIhuAAAA", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 16:42:41 [notice] 33#33: exiting
+2026/06/06 16:42:41 [notice] 30#30: exiting
+2026/06/06 16:42:41 [notice] 30#30: exit
+2026/06/06 16:42:41 [notice] 34#34: exit
+2026/06/06 16:42:41 [notice] 31#31: exit
+2026/06/06 16:42:41 [notice] 33#33: exit
+2026/06/06 16:42:41 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2026/06/06 16:42:41 [notice] 1#1: worker process 28 exited with code 0
+2026/06/06 16:42:41 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 16:42:41 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2026/06/06 16:42:41 [notice] 1#1: worker process 35 exited with code 0
+2026/06/06 16:42:41 [notice] 1#1: worker process 32 exited with code 0
+2026/06/06 16:42:41 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 16:42:41 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2026/06/06 16:42:41 [notice] 1#1: worker process 29 exited with code 0
+2026/06/06 16:42:41 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 16:42:41 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2026/06/06 16:42:41 [notice] 1#1: worker process 30 exited with code 0
+2026/06/06 16:42:41 [notice] 1#1: worker process 33 exited with code 0
+2026/06/06 16:42:41 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 16:42:41 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/06/06 16:42:41 [notice] 1#1: worker process 31 exited with code 0
+2026/06/06 16:42:41 [notice] 1#1: worker process 34 exited with code 0
+2026/06/06 16:42:41 [notice] 1#1: exit
+2026/06/06 16:42:42 [notice] 1#1: using the "epoll" event method
+2026/06/06 16:42:42 [notice] 1#1: nginx/1.31.1
+2026/06/06 16:42:42 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/06/06 16:42:42 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/06/06 16:42:42 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/06/06 16:42:42 [notice] 1#1: start worker processes
+2026/06/06 16:42:42 [notice] 1#1: start worker process 28
+2026/06/06 16:42:42 [notice] 1#1: start worker process 29
+2026/06/06 16:42:42 [notice] 1#1: start worker process 30
+2026/06/06 16:42:42 [notice] 1#1: start worker process 31
+2026/06/06 16:42:42 [notice] 1#1: start worker process 32
+2026/06/06 16:42:42 [notice] 1#1: start worker process 33
+2026/06/06 16:42:42 [notice] 1#1: start worker process 34
+2026/06/06 16:42:42 [notice] 1#1: start worker process 35
+2026/06/06 16:42:43 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTqBoZ HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTqBoZ", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 16:42:46 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTqCXH HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTqCXH", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 16:42:47 [error] 29#29: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /assets/public/images/carousel/3.jpg HTTP/1.1", upstream: "http://172.20.0.2:3000/assets/public/images/carousel/3.jpg", host: "localhost", referrer: "http://localhost/"
+2026/06/06 16:42:47 [error] 29#29: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /ftp/legal.md HTTP/1.1", upstream: "http://172.20.0.2:3000/ftp/legal.md", host: "localhost", referrer: "http://localhost/"
+2026/06/06 16:42:47 [error] 29#29: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.20.0.2:3000/favicon.ico", host: "localhost", referrer: "http://localhost/ftp/legal.md"
+2026/06/06 16:42:48 [error] 29#29: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTqC_n HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTqC_n", host: "localhost", referrer: "http://localhost/"
+2026/06/06 16:42:48 [error] 29#29: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /api/Feedbacks/ HTTP/1.1", upstream: "http://172.20.0.2:3000/api/Feedbacks/", host: "localhost", referrer: "http://localhost/"
+2026/06/06 16:42:48 [error] 30#30: *10 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /rest/admin/application-configuration HTTP/1.1", upstream: "http://172.20.0.2:3000/rest/admin/application-configuration", host: "localhost", referrer: "http://localhost/"
+2026/06/06 16:42:49 [error] 29#29: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTqDEj HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTqDEj", host: "localhost", referrer: "http://localhost/"
+2026/06/06 16:42:50 [error] 30#30: *10 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /ftp/legal.md HTTP/1.1", upstream: "http://172.20.0.2:3000/ftp/legal.md", host: "localhost", referrer: "http://localhost/"
+2026/06/06 16:42:50 [error] 29#29: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.20.0.2:3000/favicon.ico", host: "localhost", referrer: "http://localhost/ftp/legal.md"
+2026/06/06 16:42:53 [error] 30#30: *10 open() "/usr/share/nginx/html/ftp" failed (2: No such file or directory), client: 172.20.0.1, server: , request: "GET /ftp HTTP/1.1", host: "localhost"
+2026/06/06 16:42:54 [error] 29#29: *4 open() "/usr/share/nginx/html/ftp" failed (2: No such file or directory), client: 172.20.0.1, server: , request: "GET /ftp HTTP/1.1", host: "localhost"
+2026/06/06 16:43:15 [error] 33#33: *33 open() "/usr/share/nginx/html/ftp" failed (2: No such file or directory), client: 172.20.0.1, server: , request: "GET /ftp HTTP/1.1", host: "localhost"
+2026/06/06 16:43:15 [error] 35#35: *40 open() "/usr/share/nginx/html/ftp" failed (2: No such file or directory), client: 172.20.0.1, server: , request: "GET /ftp HTTP/1.1", host: "localhost"
+2026/06/06 16:43:26 [error] 28#28: *99 open() "/usr/share/nginx/html/ftp" failed (2: No such file or directory), client: 172.20.0.1, server: , request: "GET /ftp HTTP/1.1", host: "localhost"
+2026/06/06 16:43:26 [error] 28#28: *100 open() "/usr/share/nginx/html/ftp" failed (2: No such file or directory), client: 172.20.0.1, server: , request: "GET /ftp HTTP/1.1", host: "localhost"
+2026/06/06 17:01:32 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/06/06 17:01:32 [notice] 28#28: gracefully shutting down
+2026/06/06 17:01:32 [notice] 33#33: gracefully shutting down
+2026/06/06 17:01:32 [notice] 32#32: gracefully shutting down
+2026/06/06 17:01:32 [notice] 29#29: gracefully shutting down
+2026/06/06 17:01:32 [notice] 30#30: gracefully shutting down
+2026/06/06 17:01:32 [notice] 34#34: gracefully shutting down
+2026/06/06 17:01:32 [notice] 31#31: gracefully shutting down
+2026/06/06 17:01:32 [notice] 33#33: exiting
+2026/06/06 17:01:32 [notice] 35#35: gracefully shutting down
+2026/06/06 17:01:32 [notice] 29#29: exiting
+2026/06/06 17:01:32 [notice] 32#32: exiting
+2026/06/06 17:01:32 [notice] 30#30: exiting
+2026/06/06 17:01:32 [notice] 30#30: exit
+2026/06/06 17:01:32 [notice] 35#35: exiting
+2026/06/06 17:01:32 [notice] 34#34: exiting
+2026/06/06 17:01:32 [notice] 32#32: exit
+2026/06/06 17:01:32 [notice] 33#33: exit
+2026/06/06 17:01:32 [notice] 29#29: exit
+2026/06/06 17:01:32 [notice] 31#31: exiting
+2026/06/06 17:01:32 [notice] 31#31: exit
+2026/06/06 17:01:32 [notice] 35#35: exit
+2026/06/06 17:01:32 [notice] 34#34: exit
+2026/06/06 17:01:32 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/06/06 17:01:32 [notice] 1#1: worker process 30 exited with code 0
+2026/06/06 17:01:32 [error] 28#28: *174 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTuQPf.0&sid=Ftg3oVIuGu-_D0KsAAAA HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTuQPf.0&sid=Ftg3oVIuGu-_D0KsAAAA", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:01:32 [notice] 1#1: worker process 31 exited with code 0
+2026/06/06 17:01:32 [notice] 1#1: worker process 33 exited with code 0
+2026/06/06 17:01:32 [notice] 1#1: worker process 32 exited with code 0
+2026/06/06 17:01:32 [notice] 1#1: worker process 34 exited with code 0
+2026/06/06 17:01:32 [notice] 28#28: exiting
+2026/06/06 17:01:32 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:01:32 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2026/06/06 17:01:32 [notice] 28#28: exit
+2026/06/06 17:01:32 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2026/06/06 17:01:32 [notice] 1#1: worker process 29 exited with code 0
+2026/06/06 17:01:32 [notice] 1#1: worker process 35 exited with code 0
+2026/06/06 17:01:32 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:01:32 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2026/06/06 17:01:32 [notice] 1#1: worker process 28 exited with code 0
+2026/06/06 17:01:32 [notice] 1#1: exit
+2026/06/06 17:01:34 [notice] 1#1: using the "epoll" event method
+2026/06/06 17:01:34 [notice] 1#1: nginx/1.31.1
+2026/06/06 17:01:34 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/06/06 17:01:34 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/06/06 17:01:34 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/06/06 17:01:34 [notice] 1#1: start worker processes
+2026/06/06 17:01:34 [notice] 1#1: start worker process 28
+2026/06/06 17:01:34 [notice] 1#1: start worker process 29
+2026/06/06 17:01:34 [notice] 1#1: start worker process 30
+2026/06/06 17:01:34 [notice] 1#1: start worker process 31
+2026/06/06 17:01:34 [notice] 1#1: start worker process 32
+2026/06/06 17:01:34 [notice] 1#1: start worker process 33
+2026/06/06 17:01:34 [notice] 1#1: start worker process 34
+2026/06/06 17:01:34 [notice] 1#1: start worker process 35
+2026/06/06 17:01:34 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTuVwH HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwTuVwH", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:01:37 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTuWfI HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwTuWfI", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:01:43 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTuY6s HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwTuY6s", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:06:01 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/06/06 17:06:01 [notice] 28#28: gracefully shutting down
+2026/06/06 17:06:01 [notice] 34#34: gracefully shutting down
+2026/06/06 17:06:01 [notice] 30#30: gracefully shutting down
+2026/06/06 17:06:01 [notice] 31#31: gracefully shutting down
+2026/06/06 17:06:01 [notice] 30#30: exiting
+2026/06/06 17:06:01 [notice] 32#32: gracefully shutting down
+2026/06/06 17:06:01 [notice] 33#33: gracefully shutting down
+2026/06/06 17:06:01 [notice] 35#35: gracefully shutting down
+2026/06/06 17:06:01 [notice] 29#29: gracefully shutting down
+2026/06/06 17:06:01 [notice] 34#34: exiting
+2026/06/06 17:06:01 [notice] 32#32: exiting
+2026/06/06 17:06:01 [notice] 31#31: exiting
+2026/06/06 17:06:01 [notice] 30#30: exit
+2026/06/06 17:06:01 [notice] 34#34: exit
+2026/06/06 17:06:01 [notice] 33#33: exiting
+2026/06/06 17:06:01 [notice] 33#33: exit
+2026/06/06 17:06:01 [notice] 35#35: exiting
+2026/06/06 17:06:01 [notice] 35#35: exit
+2026/06/06 17:06:01 [notice] 32#32: exit
+2026/06/06 17:06:01 [notice] 31#31: exit
+2026/06/06 17:06:01 [error] 28#28: *1 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTvWee.0&sid=mGZggRcqLpBjVdwvAAAA HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwTvWee.0&sid=mGZggRcqLpBjVdwvAAAA", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:06:01 [error] 29#29: *361 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTvVb4.0&sid=f0QtjrQudivZ3unUAAAM HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwTvVb4.0&sid=f0QtjrQudivZ3unUAAAM", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:06:01 [notice] 28#28: exiting
+2026/06/06 17:06:01 [notice] 29#29: exiting
+2026/06/06 17:06:01 [notice] 29#29: exit
+2026/06/06 17:06:01 [notice] 28#28: exit
+2026/06/06 17:06:01 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/06/06 17:06:01 [notice] 1#1: worker process 30 exited with code 0
+2026/06/06 17:06:01 [notice] 1#1: worker process 34 exited with code 0
+2026/06/06 17:06:01 [notice] 1#1: worker process 35 exited with code 0
+2026/06/06 17:06:01 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:06:01 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2026/06/06 17:06:01 [notice] 1#1: worker process 31 exited with code 0
+2026/06/06 17:06:01 [notice] 1#1: worker process 33 exited with code 0
+2026/06/06 17:06:01 [notice] 1#1: worker process 32 exited with code 0
+2026/06/06 17:06:01 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:06:01 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2026/06/06 17:06:01 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2026/06/06 17:06:01 [notice] 1#1: worker process 28 exited with code 0
+2026/06/06 17:06:01 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:06:01 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2026/06/06 17:06:01 [notice] 1#1: worker process 29 exited with code 0
+2026/06/06 17:06:01 [notice] 1#1: exit
+2026/06/06 17:06:03 [notice] 1#1: using the "epoll" event method
+2026/06/06 17:06:03 [notice] 1#1: nginx/1.31.1
+2026/06/06 17:06:03 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/06/06 17:06:03 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/06/06 17:06:03 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/06/06 17:06:03 [notice] 1#1: start worker processes
+2026/06/06 17:06:03 [notice] 1#1: start worker process 28
+2026/06/06 17:06:03 [notice] 1#1: start worker process 29
+2026/06/06 17:06:03 [notice] 1#1: start worker process 30
+2026/06/06 17:06:03 [notice] 1#1: start worker process 31
+2026/06/06 17:06:03 [notice] 1#1: start worker process 32
+2026/06/06 17:06:03 [notice] 1#1: start worker process 33
+2026/06/06 17:06:03 [notice] 1#1: start worker process 34
+2026/06/06 17:06:03 [notice] 1#1: start worker process 35
+2026/06/06 17:06:05 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTvY44 HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTvY44", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:06:06 [error] 29#29: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTvYKG HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTvYKG", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:06:06 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://172.20.0.2:3000/", host: "localhost"
+2026/06/06 17:06:07 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.20.0.2:3000/favicon.ico", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:06:08 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.20.0.2:3000/favicon.ico", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:06:08 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.20.0.2:3000/favicon.ico", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:06:09 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://172.20.0.2:3000/", host: "localhost"
+2026/06/06 17:06:09 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.20.0.2:3000/favicon.ico", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:06:11 [error] 29#29: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTvZYP HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTvZYP", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:06:12 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://172.20.0.2:3000/", host: "localhost"
+2026/06/06 17:06:12 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.20.0.2:3000/favicon.ico", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:07:38 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/06/06 17:07:38 [notice] 29#29: gracefully shutting down
+2026/06/06 17:07:38 [notice] 35#35: gracefully shutting down
+2026/06/06 17:07:38 [notice] 32#32: gracefully shutting down
+2026/06/06 17:07:38 [notice] 28#28: gracefully shutting down
+2026/06/06 17:07:38 [notice] 32#32: exiting
+2026/06/06 17:07:38 [notice] 31#31: gracefully shutting down
+2026/06/06 17:07:38 [notice] 31#31: exiting
+2026/06/06 17:07:38 [notice] 34#34: gracefully shutting down
+2026/06/06 17:07:38 [notice] 30#30: gracefully shutting down
+2026/06/06 17:07:38 [notice] 30#30: exiting
+2026/06/06 17:07:38 [notice] 30#30: exit
+2026/06/06 17:07:38 [notice] 35#35: exiting
+2026/06/06 17:07:38 [notice] 35#35: exit
+2026/06/06 17:07:38 [notice] 33#33: gracefully shutting down
+2026/06/06 17:07:38 [notice] 33#33: exiting
+2026/06/06 17:07:38 [notice] 33#33: exit
+2026/06/06 17:07:38 [notice] 28#28: exiting
+2026/06/06 17:07:38 [notice] 32#32: exit
+2026/06/06 17:07:38 [notice] 31#31: exit
+2026/06/06 17:07:38 [notice] 28#28: exit
+2026/06/06 17:07:38 [error] 34#34: *46 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTvtKp&sid=TLCQagjoNLOjXMtOAAAA HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTvtKp&sid=TLCQagjoNLOjXMtOAAAA", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:07:38 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2026/06/06 17:07:38 [error] 29#29: *163 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTvqRX.0&sid=ccMv7loRFHauPedWAAAG HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTvqRX.0&sid=ccMv7loRFHauPedWAAAG", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:07:38 [notice] 1#1: worker process 28 exited with code 0
+2026/06/06 17:07:38 [notice] 34#34: exiting
+2026/06/06 17:07:38 [notice] 1#1: worker process 30 exited with code 0
+2026/06/06 17:07:38 [notice] 34#34: exit
+2026/06/06 17:07:38 [notice] 1#1: worker process 31 exited with code 0
+2026/06/06 17:07:38 [notice] 1#1: worker process 33 exited with code 0
+2026/06/06 17:07:38 [notice] 1#1: worker process 35 exited with code 0
+2026/06/06 17:07:38 [notice] 29#29: exiting
+2026/06/06 17:07:38 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:07:38 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/06/06 17:07:38 [notice] 29#29: exit
+2026/06/06 17:07:38 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2026/06/06 17:07:38 [notice] 1#1: worker process 32 exited with code 0
+2026/06/06 17:07:38 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:07:38 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2026/06/06 17:07:38 [notice] 1#1: worker process 29 exited with code 0
+2026/06/06 17:07:38 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:07:38 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2026/06/06 17:07:38 [notice] 1#1: worker process 34 exited with code 0
+2026/06/06 17:07:38 [notice] 1#1: exit
+2026/06/06 17:07:39 [notice] 1#1: using the "epoll" event method
+2026/06/06 17:07:39 [notice] 1#1: nginx/1.31.1
+2026/06/06 17:07:39 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/06/06 17:07:39 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/06/06 17:07:39 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/06/06 17:07:39 [notice] 1#1: start worker processes
+2026/06/06 17:07:39 [notice] 1#1: start worker process 27
+2026/06/06 17:07:39 [notice] 1#1: start worker process 28
+2026/06/06 17:07:39 [notice] 1#1: start worker process 29
+2026/06/06 17:07:39 [notice] 1#1: start worker process 30
+2026/06/06 17:07:39 [notice] 1#1: start worker process 31
+2026/06/06 17:07:39 [notice] 1#1: start worker process 32
+2026/06/06 17:07:39 [notice] 1#1: start worker process 33
+2026/06/06 17:07:39 [notice] 1#1: start worker process 34
+2026/06/06 17:07:39 [error] 27#27: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTvv9S HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwTvv9S", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:07:40 [error] 28#28: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTvvGz HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwTvvGz", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:07:42 [error] 28#28: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTvvmB HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwTvvmB", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:07:42 [error] 27#27: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTvvlD HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwTvvlD", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:07:42 [error] 27#27: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://172.20.0.5:3000/", host: "localhost"
+2026/06/06 17:07:42 [error] 27#27: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.20.0.5:3000/favicon.ico", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:07:44 [error] 27#27: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://172.20.0.5:3000/", host: "localhost"
+2026/06/06 17:07:44 [error] 27#27: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.20.0.5:3000/favicon.ico", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:07:45 [error] 27#27: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.20.0.5:3000/favicon.ico", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:10:40 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/06/06 17:10:40 [notice] 28#28: gracefully shutting down
+2026/06/06 17:10:40 [notice] 29#29: gracefully shutting down
+2026/06/06 17:10:40 [notice] 31#31: gracefully shutting down
+2026/06/06 17:10:40 [notice] 30#30: gracefully shutting down
+2026/06/06 17:10:40 [notice] 30#30: exiting
+2026/06/06 17:10:40 [notice] 32#32: gracefully shutting down
+2026/06/06 17:10:40 [notice] 33#33: gracefully shutting down
+2026/06/06 17:10:40 [notice] 33#33: exiting
+2026/06/06 17:10:40 [notice] 34#34: gracefully shutting down
+2026/06/06 17:10:40 [notice] 27#27: gracefully shutting down
+2026/06/06 17:10:40 [notice] 29#29: exiting
+2026/06/06 17:10:40 [notice] 32#32: exiting
+2026/06/06 17:10:40 [notice] 33#33: exit
+2026/06/06 17:10:40 [notice] 30#30: exit
+2026/06/06 17:10:40 [notice] 34#34: exiting
+2026/06/06 17:10:40 [notice] 34#34: exit
+2026/06/06 17:10:40 [notice] 29#29: exit
+2026/06/06 17:10:40 [notice] 32#32: exit
+2026/06/06 17:10:40 [error] 27#27: *106 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTwXtb&sid=mXRxBKrjXVPgJe6xAAAE HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwTwXtb&sid=mXRxBKrjXVPgJe6xAAAE", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:10:40 [error] 28#28: *3 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTwVdO&sid=Nmf3Aqy95GeGTCUwAAAA HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwTwVdO&sid=Nmf3Aqy95GeGTCUwAAAA", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:10:40 [error] 31#31: *18 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTwWGq.0&sid=lYRRNshTgxMZ_hutAAAC HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwTwWGq.0&sid=lYRRNshTgxMZ_hutAAAC", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:10:40 [notice] 27#27: exiting
+2026/06/06 17:10:40 [notice] 27#27: exit
+2026/06/06 17:10:40 [notice] 28#28: exiting
+2026/06/06 17:10:40 [notice] 28#28: exit
+2026/06/06 17:10:40 [notice] 31#31: exiting
+2026/06/06 17:10:40 [notice] 31#31: exit
+2026/06/06 17:10:40 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/06/06 17:10:40 [notice] 1#1: worker process 29 exited with code 0
+2026/06/06 17:10:40 [notice] 1#1: worker process 30 exited with code 0
+2026/06/06 17:10:40 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:10:40 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2026/06/06 17:10:40 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2026/06/06 17:10:40 [notice] 1#1: worker process 27 exited with code 0
+2026/06/06 17:10:40 [notice] 1#1: worker process 28 exited with code 0
+2026/06/06 17:10:40 [notice] 1#1: worker process 31 exited with code 0
+2026/06/06 17:10:40 [notice] 1#1: worker process 32 exited with code 0
+2026/06/06 17:10:40 [notice] 1#1: worker process 33 exited with code 0
+2026/06/06 17:10:40 [notice] 1#1: worker process 34 exited with code 0
+2026/06/06 17:10:40 [notice] 1#1: exit
+2026/06/06 17:10:41 [notice] 1#1: using the "epoll" event method
+2026/06/06 17:10:41 [notice] 1#1: nginx/1.31.1
+2026/06/06 17:10:41 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/06/06 17:10:41 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/06/06 17:10:41 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/06/06 17:10:41 [notice] 1#1: start worker processes
+2026/06/06 17:10:41 [notice] 1#1: start worker process 28
+2026/06/06 17:10:41 [notice] 1#1: start worker process 29
+2026/06/06 17:10:41 [notice] 1#1: start worker process 30
+2026/06/06 17:10:41 [notice] 1#1: start worker process 31
+2026/06/06 17:10:41 [notice] 1#1: start worker process 32
+2026/06/06 17:10:41 [notice] 1#1: start worker process 33
+2026/06/06 17:10:41 [notice] 1#1: start worker process 34
+2026/06/06 17:10:41 [notice] 1#1: start worker process 35
+2026/06/06 17:10:42 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTwbit HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwTwbit", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:10:42 [error] 30#30: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTwbj0 HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwTwbj0", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:10:42 [error] 31#31: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTwbj0 HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwTwbj0", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:10:45 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTwcRi HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwTwcRi", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:10:45 [error] 30#30: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTwcRm HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwTwcRm", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:10:45 [error] 31#31: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTwcRn HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwTwcRn", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:13:50 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/06/06 17:13:50 [notice] 31#31: gracefully shutting down
+2026/06/06 17:13:50 [notice] 35#35: gracefully shutting down
+2026/06/06 17:13:50 [notice] 35#35: exiting
+2026/06/06 17:13:50 [notice] 29#29: gracefully shutting down
+2026/06/06 17:13:50 [notice] 28#28: gracefully shutting down
+2026/06/06 17:13:50 [notice] 33#33: gracefully shutting down
+2026/06/06 17:13:50 [notice] 33#33: exiting
+2026/06/06 17:13:50 [notice] 33#33: exit
+2026/06/06 17:13:50 [notice] 30#30: gracefully shutting down
+2026/06/06 17:13:50 [notice] 35#35: exit
+2026/06/06 17:13:50 [notice] 32#32: gracefully shutting down
+2026/06/06 17:13:50 [notice] 34#34: gracefully shutting down
+2026/06/06 17:13:50 [notice] 34#34: exiting
+2026/06/06 17:13:50 [notice] 29#29: exiting
+2026/06/06 17:13:50 [notice] 34#34: exit
+2026/06/06 17:13:50 [notice] 30#30: exiting
+2026/06/06 17:13:50 [notice] 32#32: exiting
+2026/06/06 17:13:50 [notice] 32#32: exit
+2026/06/06 17:13:50 [notice] 29#29: exit
+2026/06/06 17:13:50 [notice] 30#30: exit
+2026/06/06 17:13:50 [error] 31#31: *139 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTxIf1&sid=saeLTEupivtBOS1OAAAC HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwTxIf1&sid=saeLTEupivtBOS1OAAAC", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:13:50 [error] 28#28: *169 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTxENX&sid=OaXZZpE-2aT6O8-SAAAG HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwTxENX&sid=OaXZZpE-2aT6O8-SAAAG", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:13:50 [notice] 31#31: exiting
+2026/06/06 17:13:50 [notice] 28#28: exiting
+2026/06/06 17:13:50 [notice] 28#28: exit
+2026/06/06 17:13:50 [notice] 31#31: exit
+2026/06/06 17:13:50 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2026/06/06 17:13:50 [notice] 1#1: worker process 29 exited with code 0
+2026/06/06 17:13:50 [notice] 1#1: worker process 33 exited with code 0
+2026/06/06 17:13:50 [notice] 1#1: worker process 34 exited with code 0
+2026/06/06 17:13:50 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:13:50 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2026/06/06 17:13:50 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/06/06 17:13:50 [notice] 1#1: worker process 30 exited with code 0
+2026/06/06 17:13:50 [notice] 1#1: worker process 35 exited with code 0
+2026/06/06 17:13:50 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:13:50 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2026/06/06 17:13:50 [notice] 1#1: worker process 32 exited with code 0
+2026/06/06 17:13:50 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:13:50 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2026/06/06 17:13:50 [notice] 1#1: worker process 28 exited with code 0
+2026/06/06 17:13:50 [notice] 1#1: worker process 31 exited with code 0
+2026/06/06 17:13:50 [notice] 1#1: exit
+2026/06/06 17:13:51 [notice] 1#1: using the "epoll" event method
+2026/06/06 17:13:51 [notice] 1#1: nginx/1.31.1
+2026/06/06 17:13:51 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/06/06 17:13:51 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/06/06 17:13:51 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/06/06 17:13:51 [notice] 1#1: start worker processes
+2026/06/06 17:13:51 [notice] 1#1: start worker process 28
+2026/06/06 17:13:51 [notice] 1#1: start worker process 29
+2026/06/06 17:13:51 [notice] 1#1: start worker process 30
+2026/06/06 17:13:51 [notice] 1#1: start worker process 31
+2026/06/06 17:13:51 [notice] 1#1: start worker process 32
+2026/06/06 17:13:51 [notice] 1#1: start worker process 33
+2026/06/06 17:13:51 [notice] 1#1: start worker process 34
+2026/06/06 17:13:51 [notice] 1#1: start worker process 35
+2026/06/06 17:13:52 [error] 29#29: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTxK5a HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwTxK5a", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:13:52 [error] 30#30: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTxKBs HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwTxKBs", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:13:54 [error] 29#29: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTxKag HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwTxKag", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:13:57 [error] 30#30: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTxLRn HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwTxLRn", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:13:58 [error] 29#29: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTxLZE HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwTxLZE", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:13:59 [error] 30#30: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /rest/products/search?q= HTTP/1.1", upstream: "http://172.20.0.4:3000/rest/products/search?q=", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:13:59 [error] 31#31: *11 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /api/Quantitys/ HTTP/1.1", upstream: "http://172.20.0.4:3000/api/Quantitys/", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:13:59 [error] 30#30: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://172.20.0.4:3000/", host: "localhost"
+2026/06/06 17:14:00 [error] 31#31: *11 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.20.0.4:3000/favicon.ico", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:14:01 [error] 30#30: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.20.0.4:3000/favicon.ico", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:17:24 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/06/06 17:17:24 [notice] 28#28: gracefully shutting down
+2026/06/06 17:17:24 [notice] 29#29: gracefully shutting down
+2026/06/06 17:17:24 [notice] 35#35: gracefully shutting down
+2026/06/06 17:17:24 [notice] 35#35: exiting
+2026/06/06 17:17:24 [notice] 30#30: gracefully shutting down
+2026/06/06 17:17:24 [notice] 33#33: gracefully shutting down
+2026/06/06 17:17:24 [notice] 34#34: gracefully shutting down
+2026/06/06 17:17:24 [notice] 31#31: gracefully shutting down
+2026/06/06 17:17:24 [notice] 29#29: exiting
+2026/06/06 17:17:24 [notice] 29#29: exit
+2026/06/06 17:17:24 [notice] 35#35: exit
+2026/06/06 17:17:24 [notice] 32#32: gracefully shutting down
+2026/06/06 17:17:24 [notice] 32#32: exiting
+2026/06/06 17:17:24 [notice] 33#33: exiting
+2026/06/06 17:17:24 [notice] 33#33: exit
+2026/06/06 17:17:24 [notice] 34#34: exiting
+2026/06/06 17:17:24 [notice] 31#31: exiting
+2026/06/06 17:17:24 [notice] 32#32: exit
+2026/06/06 17:17:24 [notice] 34#34: exit
+2026/06/06 17:17:24 [notice] 31#31: exit
+2026/06/06 17:17:24 [error] 28#28: *200 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTy7gn&sid=rk_MS5KnnFdIHCQQAAAK HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwTy7gn&sid=rk_MS5KnnFdIHCQQAAAK", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:17:24 [error] 30#30: *5 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTy40h.0&sid=sRfjjDVLwY6B-9YzAAAG HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwTy40h.0&sid=sRfjjDVLwY6B-9YzAAAG", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:17:24 [error] 28#28: *40 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTy7dv&sid=4clMVLfY2hK-4btoAAAA HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwTy7dv&sid=4clMVLfY2hK-4btoAAAA", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:17:24 [notice] 28#28: exiting
+2026/06/06 17:17:24 [notice] 28#28: exit
+2026/06/06 17:17:24 [notice] 30#30: exiting
+2026/06/06 17:17:24 [notice] 30#30: exit
+2026/06/06 17:17:24 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2026/06/06 17:17:24 [notice] 1#1: worker process 33 exited with code 0
+2026/06/06 17:17:24 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:17:24 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2026/06/06 17:17:24 [notice] 1#1: worker process 29 exited with code 0
+2026/06/06 17:17:24 [notice] 1#1: worker process 31 exited with code 0
+2026/06/06 17:17:24 [notice] 1#1: worker process 34 exited with code 0
+2026/06/06 17:17:24 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:17:24 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2026/06/06 17:17:24 [notice] 1#1: worker process 30 exited with code 0
+2026/06/06 17:17:24 [notice] 1#1: worker process 32 exited with code 0
+2026/06/06 17:17:24 [notice] 1#1: worker process 35 exited with code 0
+2026/06/06 17:17:24 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:17:24 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/06/06 17:17:24 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2026/06/06 17:17:24 [notice] 1#1: worker process 28 exited with code 0
+2026/06/06 17:17:24 [notice] 1#1: exit
+2026/06/06 17:17:25 [notice] 1#1: using the "epoll" event method
+2026/06/06 17:17:25 [notice] 1#1: nginx/1.31.1
+2026/06/06 17:17:25 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/06/06 17:17:25 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/06/06 17:17:25 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/06/06 17:17:25 [notice] 1#1: start worker processes
+2026/06/06 17:17:25 [notice] 1#1: start worker process 28
+2026/06/06 17:17:25 [notice] 1#1: start worker process 29
+2026/06/06 17:17:25 [notice] 1#1: start worker process 30
+2026/06/06 17:17:25 [notice] 1#1: start worker process 31
+2026/06/06 17:17:25 [notice] 1#1: start worker process 32
+2026/06/06 17:17:25 [notice] 1#1: start worker process 33
+2026/06/06 17:17:25 [notice] 1#1: start worker process 34
+2026/06/06 17:17:25 [notice] 1#1: start worker process 35
+2026/06/06 17:17:25 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTy85Z HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTy85Z", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:17:26 [error] 31#31: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTy8LF HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTy8LF", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:17:27 [error] 30#30: *6 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTy8Ya HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTy8Ya", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:17:29 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTy949 HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTy949", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:17:29 [error] 31#31: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTy94A HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTy94A", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:17:30 [error] 30#30: *6 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTy9Il HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTy9Il", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:17:32 [error] 31#31: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwTy9oy HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwTy9oy", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:26:02 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/06/06 17:26:02 [notice] 29#29: gracefully shutting down
+2026/06/06 17:26:02 [notice] 34#34: gracefully shutting down
+2026/06/06 17:26:02 [notice] 28#28: gracefully shutting down
+2026/06/06 17:26:02 [notice] 34#34: exiting
+2026/06/06 17:26:02 [notice] 31#31: gracefully shutting down
+2026/06/06 17:26:02 [notice] 30#30: gracefully shutting down
+2026/06/06 17:26:02 [notice] 30#30: exiting
+2026/06/06 17:26:02 [notice] 35#35: gracefully shutting down
+2026/06/06 17:26:02 [notice] 33#33: gracefully shutting down
+2026/06/06 17:26:02 [notice] 32#32: gracefully shutting down
+2026/06/06 17:26:02 [notice] 35#35: exiting
+2026/06/06 17:26:02 [notice] 28#28: exiting
+2026/06/06 17:26:02 [notice] 34#34: exit
+2026/06/06 17:26:02 [notice] 30#30: exit
+2026/06/06 17:26:02 [notice] 33#33: exiting
+2026/06/06 17:26:02 [notice] 33#33: exit
+2026/06/06 17:26:02 [notice] 32#32: exiting
+2026/06/06 17:26:02 [notice] 35#35: exit
+2026/06/06 17:26:02 [notice] 28#28: exit
+2026/06/06 17:26:02 [notice] 32#32: exit
+2026/06/06 17:26:02 [error] 29#29: *290 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwT-4R2&sid=emanw5P9SbWwQ2BXAAAA HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwT-4R2&sid=emanw5P9SbWwQ2BXAAAA", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:26:02 [error] 31#31: *4 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwT-64a&sid=DPX1Pxi5vHP8c5tNAAAE HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwT-64a&sid=DPX1Pxi5vHP8c5tNAAAE", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:26:02 [notice] 29#29: exiting
+2026/06/06 17:26:02 [notice] 31#31: exiting
+2026/06/06 17:26:02 [notice] 29#29: exit
+2026/06/06 17:26:02 [notice] 31#31: exit
+2026/06/06 17:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2026/06/06 17:26:02 [notice] 1#1: worker process 33 exited with code 0
+2026/06/06 17:26:02 [notice] 1#1: worker process 34 exited with code 0
+2026/06/06 17:26:02 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2026/06/06 17:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/06/06 17:26:02 [notice] 1#1: worker process 28 exited with code 0
+2026/06/06 17:26:02 [notice] 1#1: worker process 30 exited with code 0
+2026/06/06 17:26:02 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2026/06/06 17:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2026/06/06 17:26:02 [notice] 1#1: worker process 32 exited with code 0
+2026/06/06 17:26:02 [notice] 1#1: worker process 35 exited with code 0
+2026/06/06 17:26:02 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2026/06/06 17:26:02 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2026/06/06 17:26:02 [notice] 1#1: worker process 29 exited with code 0
+2026/06/06 17:26:02 [notice] 1#1: worker process 31 exited with code 0
+2026/06/06 17:26:02 [notice] 1#1: exit
+2026/06/06 17:26:03 [notice] 1#1: using the "epoll" event method
+2026/06/06 17:26:03 [notice] 1#1: nginx/1.31.1
+2026/06/06 17:26:03 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/06/06 17:26:03 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/06/06 17:26:03 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/06/06 17:26:03 [notice] 1#1: start worker processes
+2026/06/06 17:26:03 [notice] 1#1: start worker process 28
+2026/06/06 17:26:03 [notice] 1#1: start worker process 29
+2026/06/06 17:26:03 [notice] 1#1: start worker process 30
+2026/06/06 17:26:03 [notice] 1#1: start worker process 31
+2026/06/06 17:26:03 [notice] 1#1: start worker process 32
+2026/06/06 17:26:03 [notice] 1#1: start worker process 33
+2026/06/06 17:26:03 [notice] 1#1: start worker process 34
+2026/06/06 17:26:03 [notice] 1#1: start worker process 35
+2026/06/06 17:26:04 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwT-6p5 HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwT-6p5", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:26:05 [error] 30#30: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwT-72m HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwT-72m", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:26:07 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwT-7Xw HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwT-7Xw", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:26:09 [error] 30#30: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwT-819 HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwT-819", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:26:11 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwT-8eJ HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwT-8eJ", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:26:15 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /assets/public/images/products/dragonfruit_juice.png HTTP/1.1", upstream: "http://172.20.0.2:3000/assets/public/images/products/dragonfruit_juice.png", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:26:15 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /assets/public/images/products/braga.jpg HTTP/1.1", upstream: "http://172.20.0.2:3000/assets/public/images/products/braga.jpg", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:26:15 [error] 31#31: *11 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /assets/public/images/products/eggfruit_juice.jpg HTTP/1.1", upstream: "http://172.20.0.2:3000/assets/public/images/products/eggfruit_juice.jpg", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:26:15 [error] 28#28: *10 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /assets/public/images/products/carrot_juice.jpeg HTTP/1.1", upstream: "http://172.20.0.2:3000/assets/public/images/products/carrot_juice.jpeg", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:26:15 [error] 31#31: *11 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /assets/public/images/products/banana_juice.jpg HTTP/1.1", upstream: "http://172.20.0.2:3000/assets/public/images/products/banana_juice.jpg", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:26:15 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /assets/public/images/products/apple_juice.jpg HTTP/1.1", upstream: "http://172.20.0.2:3000/assets/public/images/products/apple_juice.jpg", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:26:15 [error] 30#30: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwT-9Uu HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwT-9Uu", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:26:15 [error] 28#28: *10 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /assets/public/images/products/apple_pressings.jpg HTTP/1.1", upstream: "http://172.20.0.2:3000/assets/public/images/products/apple_pressings.jpg", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:26:15 [error] 31#31: *11 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /assets/public/images/products/basil_smoothie.png HTTP/1.1", upstream: "http://172.20.0.2:3000/assets/public/images/products/basil_smoothie.png", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:26:15 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /assets/public/images/products/artwork2.jpg HTTP/1.1", upstream: "http://172.20.0.2:3000/assets/public/images/products/artwork2.jpg", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:26:15 [error] 28#28: *10 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /assets/public/images/products/berry_juice.png HTTP/1.1", upstream: "http://172.20.0.2:3000/assets/public/images/products/berry_juice.png", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:26:15 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /assets/public/images/products/fruit_press.jpg HTTP/1.1", upstream: "http://172.20.0.2:3000/assets/public/images/products/fruit_press.jpg", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:26:15 [error] 31#31: *11 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /assets/public/images/products/elderflower_cordial.jpg HTTP/1.1", upstream: "http://172.20.0.2:3000/assets/public/images/products/elderflower_cordial.jpg", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:31:13 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/06/06 17:31:13 [notice] 31#31: gracefully shutting down
+2026/06/06 17:31:13 [notice] 28#28: gracefully shutting down
+2026/06/06 17:31:13 [notice] 30#30: gracefully shutting down
+2026/06/06 17:31:13 [notice] 32#32: gracefully shutting down
+2026/06/06 17:31:13 [notice] 34#34: gracefully shutting down
+2026/06/06 17:31:13 [notice] 33#33: gracefully shutting down
+2026/06/06 17:31:13 [notice] 32#32: exiting
+2026/06/06 17:31:13 [notice] 32#32: exit
+2026/06/06 17:31:13 [notice] 29#29: gracefully shutting down
+2026/06/06 17:31:13 [notice] 35#35: gracefully shutting down
+2026/06/06 17:31:13 [notice] 35#35: exiting
+2026/06/06 17:31:13 [notice] 31#31: exiting
+2026/06/06 17:31:13 [notice] 28#28: exiting
+2026/06/06 17:31:13 [notice] 34#34: exiting
+2026/06/06 17:31:13 [notice] 34#34: exit
+2026/06/06 17:31:13 [notice] 33#33: exiting
+2026/06/06 17:31:13 [notice] 33#33: exit
+2026/06/06 17:31:13 [notice] 35#35: exit
+2026/06/06 17:31:13 [notice] 31#31: exit
+2026/06/06 17:31:13 [notice] 28#28: exit
+2026/06/06 17:31:13 [error] 29#29: *240 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwT_FpH&sid=iLvieNj_jgGgczDSAAAI HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwT_FpH&sid=iLvieNj_jgGgczDSAAAI", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:31:13 [error] 30#30: *327 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwT_F6m&sid=6yHmt7Vicf9Gr9PHAAAK HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwT_F6m&sid=6yHmt7Vicf9Gr9PHAAAK", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:31:13 [notice] 29#29: exiting
+2026/06/06 17:31:13 [notice] 30#30: exiting
+2026/06/06 17:31:13 [notice] 30#30: exit
+2026/06/06 17:31:13 [notice] 29#29: exit
+2026/06/06 17:31:13 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2026/06/06 17:31:13 [notice] 1#1: worker process 32 exited with code 0
+2026/06/06 17:31:13 [notice] 1#1: worker process 34 exited with code 0
+2026/06/06 17:31:13 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:31:13 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2026/06/06 17:31:13 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2026/06/06 17:31:13 [notice] 1#1: worker process 31 exited with code 0
+2026/06/06 17:31:13 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:31:13 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2026/06/06 17:31:13 [notice] 1#1: worker process 33 exited with code 0
+2026/06/06 17:31:13 [notice] 1#1: worker process 28 exited with code 0
+2026/06/06 17:31:13 [notice] 1#1: worker process 35 exited with code 0
+2026/06/06 17:31:13 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:31:13 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2026/06/06 17:31:13 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/06/06 17:31:13 [notice] 1#1: worker process 30 exited with code 0
+2026/06/06 17:31:13 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:31:14 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2026/06/06 17:31:14 [notice] 1#1: worker process 29 exited with code 0
+2026/06/06 17:31:14 [notice] 1#1: exit
+2026/06/06 17:31:15 [notice] 1#1: using the "epoll" event method
+2026/06/06 17:31:15 [notice] 1#1: nginx/1.31.1
+2026/06/06 17:31:15 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/06/06 17:31:15 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/06/06 17:31:15 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/06/06 17:31:15 [notice] 1#1: start worker processes
+2026/06/06 17:31:15 [notice] 1#1: start worker process 28
+2026/06/06 17:31:15 [notice] 1#1: start worker process 29
+2026/06/06 17:31:15 [notice] 1#1: start worker process 30
+2026/06/06 17:31:15 [notice] 1#1: start worker process 31
+2026/06/06 17:31:15 [notice] 1#1: start worker process 32
+2026/06/06 17:31:15 [notice] 1#1: start worker process 33
+2026/06/06 17:31:15 [notice] 1#1: start worker process 34
+2026/06/06 17:31:15 [notice] 1#1: start worker process 35
+2026/06/06 17:31:17 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwT_JAu HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwT_JAu", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:31:18 [error] 31#31: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwT_JTH HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwT_JTH", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:31:21 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwT_K9X HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwT_K9X", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:31:22 [error] 31#31: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwT_KRt HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwT_KRt", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:36:31 [error] 35#35: *15 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwU0Ugk.0&sid=Hve8x14DQAxxlwkyAAAA HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwU0Ugk.0&sid=Hve8x14DQAxxlwkyAAAA", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:36:31 [error] 35#35: *15 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "POST /socket.io/?EIO=4&transport=polling&t=PwU0Vsh&sid=Hve8x14DQAxxlwkyAAAA HTTP/1.1", upstream: "http://172.20.0.4:3000/socket.io/?EIO=4&transport=polling&t=PwU0Vsh&sid=Hve8x14DQAxxlwkyAAAA", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:36:34 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/06/06 17:36:34 [notice] 34#34: gracefully shutting down
+2026/06/06 17:36:34 [notice] 32#32: gracefully shutting down
+2026/06/06 17:36:34 [notice] 33#33: gracefully shutting down
+2026/06/06 17:36:34 [notice] 30#30: gracefully shutting down
+2026/06/06 17:36:34 [notice] 28#28: gracefully shutting down
+2026/06/06 17:36:34 [notice] 31#31: gracefully shutting down
+2026/06/06 17:36:34 [notice] 35#35: gracefully shutting down
+2026/06/06 17:36:34 [notice] 32#32: exiting
+2026/06/06 17:36:34 [notice] 29#29: gracefully shutting down
+2026/06/06 17:36:34 [notice] 34#34: exiting
+2026/06/06 17:36:34 [notice] 33#33: exiting
+2026/06/06 17:36:34 [notice] 30#30: exiting
+2026/06/06 17:36:34 [notice] 28#28: exiting
+2026/06/06 17:36:34 [notice] 31#31: exiting
+2026/06/06 17:36:34 [notice] 29#29: exiting
+2026/06/06 17:36:34 [notice] 32#32: exit
+2026/06/06 17:36:34 [notice] 34#34: exit
+2026/06/06 17:36:34 [notice] 33#33: exit
+2026/06/06 17:36:34 [notice] 30#30: exit
+2026/06/06 17:36:34 [notice] 28#28: exit
+2026/06/06 17:36:34 [notice] 31#31: exit
+2026/06/06 17:36:34 [notice] 29#29: exit
+2026/06/06 17:36:34 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2026/06/06 17:36:34 [notice] 1#1: worker process 28 exited with code 0
+2026/06/06 17:36:34 [notice] 1#1: worker process 29 exited with code 0
+2026/06/06 17:36:34 [notice] 1#1: worker process 31 exited with code 0
+2026/06/06 17:36:34 [notice] 1#1: worker process 32 exited with code 0
+2026/06/06 17:36:34 [notice] 1#1: worker process 33 exited with code 0
+2026/06/06 17:36:34 [notice] 1#1: worker process 34 exited with code 0
+2026/06/06 17:36:34 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:36:34 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2026/06/06 17:36:34 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/06/06 17:36:34 [notice] 1#1: worker process 30 exited with code 0
+2026/06/06 17:36:34 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:36:38 [notice] 1#1: using the "epoll" event method
+2026/06/06 17:36:38 [notice] 1#1: nginx/1.31.1
+2026/06/06 17:36:38 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/06/06 17:36:38 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/06/06 17:36:38 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/06/06 17:36:38 [notice] 1#1: start worker processes
+2026/06/06 17:36:38 [notice] 1#1: start worker process 28
+2026/06/06 17:36:38 [notice] 1#1: start worker process 29
+2026/06/06 17:36:38 [notice] 1#1: start worker process 30
+2026/06/06 17:36:38 [notice] 1#1: start worker process 31
+2026/06/06 17:36:38 [notice] 1#1: start worker process 32
+2026/06/06 17:36:38 [notice] 1#1: start worker process 33
+2026/06/06 17:36:38 [notice] 1#1: start worker process 34
+2026/06/06 17:36:38 [notice] 1#1: start worker process 35
+2026/06/06 17:36:41 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwU0YKF HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwU0YKF", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:36:47 [error] 28#28: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwU0Znv HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwU0Znv", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:45:33 [error] 33#33: *17 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwU2ZLN&sid=usLKNwP-kp3qw1IvAAAE HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwU2ZLN&sid=usLKNwP-kp3qw1IvAAAE", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:45:33 [error] 31#31: *12 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwU2VPx&sid=AGoODv2zHM9wcO5bAAAA HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwU2VPx&sid=AGoODv2zHM9wcO5bAAAA", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:45:33 [error] 33#33: *17 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "POST /socket.io/?EIO=4&transport=polling&t=PwU2aHr&sid=usLKNwP-kp3qw1IvAAAE HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwU2aHr&sid=usLKNwP-kp3qw1IvAAAE", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:45:33 [error] 31#31: *12 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "POST /socket.io/?EIO=4&transport=polling&t=PwU2aHu&sid=AGoODv2zHM9wcO5bAAAA HTTP/1.1", upstream: "http://172.20.0.2:3000/socket.io/?EIO=4&transport=polling&t=PwU2aHu&sid=AGoODv2zHM9wcO5bAAAA", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:45:37 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/06/06 17:45:37 [notice] 28#28: gracefully shutting down
+2026/06/06 17:45:37 [notice] 34#34: gracefully shutting down
+2026/06/06 17:45:37 [notice] 35#35: gracefully shutting down
+2026/06/06 17:45:37 [notice] 28#28: exiting
+2026/06/06 17:45:37 [notice] 31#31: gracefully shutting down
+2026/06/06 17:45:37 [notice] 35#35: exiting
+2026/06/06 17:45:37 [notice] 29#29: gracefully shutting down
+2026/06/06 17:45:37 [notice] 33#33: gracefully shutting down
+2026/06/06 17:45:37 [notice] 30#30: gracefully shutting down
+2026/06/06 17:45:37 [notice] 32#32: gracefully shutting down
+2026/06/06 17:45:37 [notice] 30#30: exiting
+2026/06/06 17:45:37 [notice] 32#32: exiting
+2026/06/06 17:45:37 [notice] 34#34: exiting
+2026/06/06 17:45:37 [notice] 28#28: exit
+2026/06/06 17:45:37 [notice] 35#35: exit
+2026/06/06 17:45:37 [notice] 29#29: exiting
+2026/06/06 17:45:37 [notice] 30#30: exit
+2026/06/06 17:45:37 [notice] 32#32: exit
+2026/06/06 17:45:37 [notice] 34#34: exit
+2026/06/06 17:45:37 [notice] 29#29: exit
+2026/06/06 17:45:37 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2026/06/06 17:45:37 [notice] 1#1: worker process 32 exited with code 0
+2026/06/06 17:45:37 [notice] 1#1: worker process 28 exited with code 0
+2026/06/06 17:45:37 [notice] 1#1: worker process 34 exited with code 0
+2026/06/06 17:45:37 [notice] 1#1: worker process 35 exited with code 0
+2026/06/06 17:45:37 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:45:37 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2026/06/06 17:45:37 [notice] 1#1: worker process 29 exited with code 0
+2026/06/06 17:45:37 [notice] 1#1: worker process 30 exited with code 0
+2026/06/06 17:45:37 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 17:45:37 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2026/06/06 17:45:41 [notice] 1#1: using the "epoll" event method
+2026/06/06 17:45:41 [notice] 1#1: nginx/1.31.1
+2026/06/06 17:45:41 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/06/06 17:45:41 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/06/06 17:45:41 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/06/06 17:45:41 [notice] 1#1: start worker processes
+2026/06/06 17:45:41 [notice] 1#1: start worker process 29
+2026/06/06 17:45:41 [notice] 1#1: start worker process 30
+2026/06/06 17:45:41 [notice] 1#1: start worker process 31
+2026/06/06 17:45:41 [notice] 1#1: start worker process 32
+2026/06/06 17:45:41 [notice] 1#1: start worker process 33
+2026/06/06 17:45:41 [notice] 1#1: start worker process 34
+2026/06/06 17:45:41 [notice] 1#1: start worker process 35
+2026/06/06 17:45:41 [notice] 1#1: start worker process 36
+2026/06/06 17:45:46 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwU2dNn HTTP/1.1", upstream: "http://172.20.0.3:3000/socket.io/?EIO=4&transport=polling&t=PwU2dNn", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:45:47 [error] 30#30: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwU2ddH HTTP/1.1", upstream: "http://172.20.0.3:3000/socket.io/?EIO=4&transport=polling&t=PwU2ddH", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:45:54 [error] 30#30: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwU2fDP HTTP/1.1", upstream: "http://172.20.0.3:3000/socket.io/?EIO=4&transport=polling&t=PwU2fDP", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:45:54 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwU2es_ HTTP/1.1", upstream: "http://172.20.0.3:3000/socket.io/?EIO=4&transport=polling&t=PwU2es_", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 17:46:00 [error] 30#30: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwU2goT HTTP/1.1", upstream: "http://172.20.0.3:3000/socket.io/?EIO=4&transport=polling&t=PwU2goT", host: "localhost", referrer: "http://localhost/"
+2026/06/06 17:46:00 [error] 29#29: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwU2goS HTTP/1.1", upstream: "http://172.20.0.3:3000/socket.io/?EIO=4&transport=polling&t=PwU2goS", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 18:48:29 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/06/06 18:48:29 [notice] 32#32: gracefully shutting down
+2026/06/06 18:48:29 [notice] 34#34: gracefully shutting down
+2026/06/06 18:48:29 [notice] 29#29: gracefully shutting down
+2026/06/06 18:48:29 [notice] 30#30: gracefully shutting down
+2026/06/06 18:48:29 [notice] 35#35: gracefully shutting down
+2026/06/06 18:48:29 [notice] 36#36: gracefully shutting down
+2026/06/06 18:48:29 [notice] 31#31: gracefully shutting down
+2026/06/06 18:48:29 [notice] 29#29: exiting
+2026/06/06 18:48:29 [notice] 33#33: gracefully shutting down
+2026/06/06 18:48:29 [notice] 36#36: exiting
+2026/06/06 18:48:29 [notice] 32#32: exiting
+2026/06/06 18:48:29 [notice] 30#30: exiting
+2026/06/06 18:48:29 [notice] 31#31: exiting
+2026/06/06 18:48:29 [notice] 32#32: exit
+2026/06/06 18:48:29 [notice] 30#30: exit
+2026/06/06 18:48:29 [notice] 31#31: exit
+2026/06/06 18:48:29 [notice] 29#29: exit
+2026/06/06 18:48:29 [notice] 36#36: exit
+2026/06/06 18:48:29 [notice] 33#33: exiting
+2026/06/06 18:48:29 [notice] 33#33: exit
+2026/06/06 18:48:29 [error] 34#34: *1272 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwUGyGO.0&sid=_6NcFttsi3b6b7bYAAAS HTTP/1.1", upstream: "http://172.20.0.3:3000/socket.io/?EIO=4&transport=polling&t=PwUGyGO.0&sid=_6NcFttsi3b6b7bYAAAS", host: "localhost", referrer: "http://localhost/"
+2026/06/06 18:48:29 [error] 35#35: *1661 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwUGxKP.0&sid=IlgOoDMGHRg9gqJMAAAA HTTP/1.1", upstream: "http://172.20.0.3:3000/socket.io/?EIO=4&transport=polling&t=PwUGxKP.0&sid=IlgOoDMGHRg9gqJMAAAA", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 18:48:29 [error] 34#34: *1507 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwUGx2Z.0&sid=wblNpVXVpcveffiDAAAY HTTP/1.1", upstream: "http://172.20.0.3:3000/socket.io/?EIO=4&transport=polling&t=PwUGx2Z.0&sid=wblNpVXVpcveffiDAAAY", host: "localhost", referrer: "http://localhost/"
+2026/06/06 18:48:29 [notice] 35#35: exiting
+2026/06/06 18:48:29 [error] 34#34: *1502 upstream prematurely closed connection while reading response header from upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwUGvQ1&sid=j8xdcsocUfmXu6JjAAAM HTTP/1.1", upstream: "http://172.20.0.3:3000/socket.io/?EIO=4&transport=polling&t=PwUGvQ1&sid=j8xdcsocUfmXu6JjAAAM", host: "localhost", referrer: "http://localhost/"
+2026/06/06 18:48:29 [notice] 35#35: exit
+2026/06/06 18:48:29 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2026/06/06 18:48:29 [notice] 34#34: exiting
+2026/06/06 18:48:29 [notice] 34#34: exit
+2026/06/06 18:48:29 [notice] 1#1: worker process 29 exited with code 0
+2026/06/06 18:48:29 [notice] 1#1: worker process 30 exited with code 0
+2026/06/06 18:48:29 [notice] 1#1: worker process 31 exited with code 0
+2026/06/06 18:48:29 [notice] 1#1: worker process 32 exited with code 0
+2026/06/06 18:48:29 [notice] 1#1: worker process 33 exited with code 0
+2026/06/06 18:48:29 [notice] 1#1: worker process 36 exited with code 0
+2026/06/06 18:48:29 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 18:48:29 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2026/06/06 18:48:29 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2026/06/06 18:48:29 [notice] 1#1: worker process 35 exited with code 0
+2026/06/06 18:48:29 [notice] 1#1: signal 29 (SIGIO) received
+2026/06/06 18:48:29 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2026/06/06 18:48:29 [notice] 1#1: worker process 34 exited with code 0
+2026/06/06 18:48:29 [notice] 1#1: exit
+2026/06/06 18:48:31 [notice] 1#1: using the "epoll" event method
+2026/06/06 18:48:31 [notice] 1#1: nginx/1.31.1
+2026/06/06 18:48:31 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/06/06 18:48:31 [notice] 1#1: OS: Linux 6.6.114.1-microsoft-standard-WSL2
+2026/06/06 18:48:31 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/06/06 18:48:31 [notice] 1#1: start worker processes
+2026/06/06 18:48:31 [notice] 1#1: start worker process 28
+2026/06/06 18:48:31 [notice] 1#1: start worker process 29
+2026/06/06 18:48:31 [notice] 1#1: start worker process 30
+2026/06/06 18:48:31 [notice] 1#1: start worker process 31
+2026/06/06 18:48:31 [notice] 1#1: start worker process 32
+2026/06/06 18:48:31 [notice] 1#1: start worker process 33
+2026/06/06 18:48:31 [notice] 1#1: start worker process 34
+2026/06/06 18:48:31 [notice] 1#1: start worker process 35
+2026/06/06 18:48:33 [error] 30#30: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwUG_3E HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwUG_3E", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 18:48:33 [error] 28#28: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwUG_3E HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwUG_3E", host: "localhost", referrer: "http://localhost/"
+2026/06/06 18:48:34 [error] 28#28: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwUG_Im HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwUG_Im", host: "localhost", referrer: "http://localhost/"
+2026/06/06 18:48:36 [error] 28#28: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwUG_o6 HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwUG_o6", host: "localhost", referrer: "http://localhost/"
+2026/06/06 18:48:36 [error] 30#30: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwUG_oE HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwUG_oE", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 18:48:36 [error] 29#29: *8 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwUG_q3 HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwUG_q3", host: "localhost", referrer: "http://localhost/"
+2026/06/06 18:48:37 [error] 28#28: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwUH01h HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwUH01h", host: "localhost", referrer: "http://localhost/"
+2026/06/06 18:48:41 [error] 29#29: *8 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwUH10M HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwUH10M", host: "localhost", referrer: "http://localhost/"
+2026/06/06 18:48:42 [error] 30#30: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwUH1N2 HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwUH1N2", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2026/06/06 18:48:42 [error] 28#28: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwUH1NE HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwUH1NE", host: "localhost", referrer: "http://localhost/"
+2026/06/06 18:48:43 [error] 28#28: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwUH1Vd HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwUH1Vd", host: "localhost", referrer: "http://localhost/"
+2026/06/06 18:48:47 [error] 29#29: *8 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: , request: "GET /socket.io/?EIO=4&transport=polling&t=PwUH2Tr HTTP/1.1", upstream: "http://172.20.0.5:3000/socket.io/?EIO=4&transport=polling&t=PwUH2Tr", host: "localhost", referrer: "http://localhost/"

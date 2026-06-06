@@ -2,10 +2,10 @@ version: "3.8"
 
 services:
   juice-shop:
-    image: bkimminich/juice-shop
+    build: ./juice-shop
     container_name: juice-shop
     ports:
-      - "3000:3000"
+      - "3000"
 
   nginx:
     image: nginx:latest
@@ -15,6 +15,7 @@ services:
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
       - ./logs:/var/log/nginx
+      - ./juice-shop/ftp:/usr/share/nginx/html/ftp:ro
     depends_on:
       - juice-shop
 
