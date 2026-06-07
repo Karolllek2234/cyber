@@ -87,4 +87,10 @@ else
   fi
 fi
 
+curl_json "Importing Kibana lab dashboards" \
+  -X POST "${KB}/api/saved_objects/_import?overwrite=true" \
+  -H "kbn-xsrf: true" \
+  --form "file=@/setup/kibana/saved-objects.ndjson" \
+  || exit 22
+
 echo "Elastic stack setup complete"

@@ -43,6 +43,7 @@ services:
     volumes:
       - ./elasticsearch/ingest-pipeline.json:/setup/ingest-pipeline.json:ro
       - ./elasticsearch/index-template.json:/setup/index-template.json:ro
+      - ./kibana/saved-objects.ndjson:/setup/kibana/saved-objects.ndjson:ro
       - ./setup/elastic-setup.sh:/setup/elastic-setup.sh:ro
     entrypoint: ["/bin/sh", "/setup/elastic-setup.sh"]
     depends_on:

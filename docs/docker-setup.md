@@ -23,7 +23,29 @@ Traffic is logged by nginx and shipped to Elasticsearch via Filebeat.
 
 ## Kibana
 
-Open [http://localhost:5601](http://localhost:5601) after the stack is up. On first start, `elastic-setup` installs an ingest pipeline, index template, and a data view named **nginx lab access logs** (`nginx-lab-*`).
+Open [http://localhost:5601](http://localhost:5601) after the stack is up. On first start, `elastic-setup` installs an ingest pipeline, index template, a data view named **nginx lab access logs** (`nginx-lab-*`), and three dashboards (from `shop/kibana/saved-objects.ndjson`):
+
+| Dashboard | ID | What it shows |
+|-----------|-----|----------------|
+| **Request outcomes (success/failures)** | `lab-request-outcomes` | Successful vs failed responses; breakdown by `source.ip` |
+| **Top target endpoints** | `lab-target-endpoints` | Top 15 paths with status breakdown (2xx / 4xx / other); paths by client IP |
+| **Health and activity monitoring** | `lab-health-activity` | Request volume over time |
+
+Direct links (after import):
+
+- http://localhost:5601/app/dashboards#/view/lab-request-outcomes
+- http://localhost:5601/app/dashboards#/view/lab-target-endpoints
+- http://localhost:5601/app/dashboards#/view/lab-health-activity
+
+Find them under **Analytics → Dashboard**. Set the time picker to include today’s `nginx-lab-*` index if panels look empty.
+
+To refresh the saved dashboards after editing them in Kibana, export from **Stack Management → Saved Objects** (include related objects) or run:
+
+```bash
+./shop/setup/export-kibana-dashboards.sh
+```
+
+Then commit `shop/kibana/saved-objects.ndjson`.
 
 In **Discover**, select that data view. Each nginx access line is parsed into structured fields:
 
