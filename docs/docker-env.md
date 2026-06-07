@@ -12,6 +12,12 @@ Set in a project-root `.env` file (copy from [`.env.example`](../.env.example)).
 | `SIMULATED_TRAFFIC_ATTACKER` | `60` | `attacker` | Seconds to wait before the ZAP daemon starts. |
 | `SIMULATED_TRAFFIC_ATTACKER_DELAY` | `60` | `attacker` | Seconds to wait after ZAP is ready before an automatic scan runs. Only applies when `SIMULATED_TRAFFIC_TRIGGER=true`. |
 | `SIMULATED_TRAFFIC_TRIGGER` | `false` | `attacker` | `true` — run the ZAP scan automatically after the delay above. `false` — trigger manually with `./simulation/scripts/run-zap-scan.sh`. |
+| `ALERT_STAFF_EMAIL` | `staff@lab.local` | `lab-alerter` | Recipient address for error-rate alert emails (captured by Mailpit). |
+| `ALERT_FROM_EMAIL` | `alerts@cyber.lab` | `lab-alerter` | From address on alert emails. |
+| `ALERT_WINDOW_MINUTES` | `5` | `lab-alerter` | Rolling window for comparing failed vs successful requests. |
+| `ALERT_MIN_FAILED` | `10` | `lab-alerter` | Minimum failed requests required before an alert can fire. |
+| `ALERT_CHECK_INTERVAL_SECONDS` | `60` | `lab-alerter` | How often the alerter polls Elasticsearch. |
+| `ALERT_COOLDOWN_MINUTES` | `15` | `lab-alerter` | Minimum time between alert emails during sustained failures. |
 
 ## Set by compose (not in `.env`)
 

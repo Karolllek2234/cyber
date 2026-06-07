@@ -47,6 +47,23 @@ To refresh the saved dashboards after editing them in Kibana, export from **Stac
 
 Then commit `shop/kibana/saved-objects.ndjson`.
 
+## Error-rate email alerts
+
+Staff notifications use [Mailpit](https://github.com/axllent/mailpit) as a local inbox. The `lab-alerter` service polls `nginx-lab-*` every minute and sends email when, in the last **5 minutes** (configurable):
+
+- failed requests (HTTP ≥ 400) **exceed** successful requests (2xx/3xx), and
+- failed count is at least **10** (configurable via `ALERT_MIN_FAILED`)
+
+Open the inbox at [http://localhost:8025](http://localhost:8025). Alert emails link to the **Request outcomes** Kibana dashboard.
+
+To test, generate attack traffic (many 4xx/5xx responses help trigger an alert sooner):
+
+```bash
+./simulation/scripts/run-juice-shop-attacks.sh
+```
+
+Tune sensitivity in `.env` — see [docker-env.md](docker-env.md).
+
 In **Discover**, select that data view. Each nginx access line is parsed into structured fields:
 
 | Field | Use |
