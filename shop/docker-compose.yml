@@ -37,6 +37,18 @@ services:
     depends_on:
       - elasticsearch
 
+  elastic-setup:
+    image: curlimages/curl:8.5.0
+    container_name: elastic-setup
+    volumes:
+      - ./elasticsearch/ingest-pipeline.json:/setup/ingest-pipeline.json:ro
+      - ./elasticsearch/index-template.json:/setup/index-template.json:ro
+      - ./setup/elastic-setup.sh:/setup/elastic-setup.sh:ro
+    entrypoint: ["/bin/sh", "/setup/elastic-setup.sh"]
+    depends_on:
+      - elasticsearch
+      - kibana
+
   filebeat:
     image: docker.elastic.co/beats/filebeat:8.11.1
     container_name: filebeat
@@ -46,4 +58,5 @@ services:
       - ./filebeat/filebeat.yml:/usr/share/filebeat/filebeat.yml
       - ./logs:/var/log/nginx
     depends_on:
-      - elasticsearch
+      elastic-setup:
+        condition: service_completed_successfully

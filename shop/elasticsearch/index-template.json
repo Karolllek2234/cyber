@@ -1,0 +1,37 @@
+{
+  "index_patterns": ["nginx-lab-*"],
+  "template": {
+    "settings": {
+      "number_of_shards": 1,
+      "number_of_replicas": 0,
+      "index.default_pipeline": "nginx-lab"
+    },
+    "mappings": {
+      "properties": {
+        "@timestamp": { "type": "date" },
+        "source.ip": { "type": "ip" },
+        "http.request.method": { "type": "keyword" },
+        "http.response.status_code": { "type": "integer" },
+        "http.response.body.bytes": { "type": "long" },
+        "http.request.referrer": { "type": "keyword" },
+        "user_agent.original": {
+          "type": "text",
+          "fields": {
+            "keyword": { "type": "keyword", "ignore_above": 256 }
+          }
+        },
+        "url.original": { "type": "keyword" },
+        "url.path": { "type": "keyword" },
+        "url.query": { "type": "wildcard" },
+        "url.params": {
+          "type": "object",
+          "dynamic": true
+        },
+        "http.request.headers.x_forwarded_for": { "type": "keyword" },
+        "event.dataset": { "type": "keyword" },
+        "error.message": { "type": "text" }
+      }
+    }
+  },
+  "priority": 500
+}
