@@ -1,0 +1,17 @@
+server.host: "0.0.0.0"
+server.name: kibana
+elasticsearch.hosts: ["http://elasticsearch:9200"]
+
+xpack.encryptedSavedObjects.encryptionKey: "cyber-lab-local-dev-encryption-key-32b"
+
+xpack.actions.preconfigured:
+  lab-mailpit:
+    name: Lab Mailpit
+    actionTypeId: .email
+    config:
+      service: other
+      from: alerts@cyber.lab
+      host: mailpit
+      port: 1025
+      secure: false
+      hasAuth: false

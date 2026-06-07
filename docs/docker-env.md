@@ -12,6 +12,12 @@ Set in a project-root `.env` file (copy from [`.env.example`](../.env.example)).
 | `SIMULATED_TRAFFIC_ATTACKER` | `60` | `attacker` | Seconds to wait before the ZAP daemon starts. |
 | `SIMULATED_TRAFFIC_ATTACKER_DELAY` | `60` | `attacker` | Seconds to wait after ZAP is ready before an automatic scan runs. Only applies when `SIMULATED_TRAFFIC_TRIGGER=true`. |
 | `SIMULATED_TRAFFIC_TRIGGER` | `false` | `attacker` | `true` — run the ZAP scan automatically after the delay above. `false` — trigger manually with `./simulation/scripts/run-zap-scan.sh`. |
+| `ALERT_STAFF_EMAIL` | `staff@lab.local` | `elastic-setup` | Recipient address for error-rate alert emails (captured by Mailpit). |
+| `ALERT_FROM_EMAIL` | `alerts@cyber.lab` | `kibana` | From address on the preconfigured Mailpit email connector (`shop/kibana/kibana.yml`). |
+| `ALERT_WINDOW_MINUTES` | `5` | `elastic-setup` | Rolling window for comparing failed vs successful requests in the Kibana ES\|QL rule. |
+| `ALERT_MIN_FAILED` | `10` | `elastic-setup` | Minimum failed requests required before an alert can fire. |
+| `ALERT_CHECK_INTERVAL_SECONDS` | `60` | `elastic-setup` | Kibana rule check interval (converted to e.g. `1m`). |
+| `ALERT_COOLDOWN_MINUTES` | `15` | `elastic-setup` | Minimum time between alert emails (`onThrottleInterval` on the rule action). |
 
 ## Set by compose (not in `.env`)
 

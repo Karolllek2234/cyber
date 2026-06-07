@@ -1,0 +1,38 @@
+{
+  "name": "Lab nginx error rate exceeds success",
+  "rule_type_id": ".es-query",
+  "consumer": "stackAlerts",
+  "enabled": true,
+  "schedule": {
+    "interval": "1m"
+  },
+  "params": {
+    "searchType": "esqlQuery",
+    "timeField": "@timestamp",
+    "timeWindowSize": 5,
+    "timeWindowUnit": "m",
+    "size": 0,
+    "excludeHitsFromPreviousRun": true,
+    "thresholdComparator": ">",
+    "threshold": [0],
+    "esqlQuery": {
+      "esql": "FROM nginx-lab-* | EVAL outcome = CASE(http.response.status_code >= 400, \"failed\", http.response.status_code >= 200 AND http.response.status_code < 400, \"success\", null) | WHERE outcome IS NOT NULL | STATS cnt = COUNT(*) BY outcome | EVAL success_cnt = CASE(outcome == \"success\", TO_DOUBLE(cnt), 0.0), failed_cnt = CASE(outcome == \"failed\", TO_DOUBLE(cnt), 0.0) | STATS success = SUM(success_cnt), failed = SUM(failed_cnt) | WHERE failed > success AND failed >= 10"
+    }
+  },
+  "actions": [
+    {
+      "group": "query matched",
+      "id": "lab-mailpit",
+      "params": {
+        "to": ["staff@lab.local"],
+        "subject": "Lab alert: nginx error rate exceeds successes",
+        "message": "Cyber lab nginx alert\n\n{{context.message}}\n\nConditions: {{context.conditions}}\nValue: {{context.value}}\nTime: {{context.date}}\n\nKibana dashboard: http://localhost:5601/app/dashboards#/view/lab-request-outcomes\nMailpit inbox: http://localhost:8025\n"
+      },
+      "frequency": {
+        "summary": false,
+        "notify_when": "onThrottleInterval",
+        "throttle": "15m"
+      }
+    }
+  ]
+}
