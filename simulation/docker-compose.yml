@@ -24,5 +24,6 @@ services:
       SIMULATED_TRAFFIC_ATTACKER_DELAY: ${SIMULATED_TRAFFIC_ATTACKER_DELAY:-60}
       SIMULATED_TRAFFIC_TRIGGER: ${SIMULATED_TRAFFIC_TRIGGER:-false}
     volumes:
+      - ./scripts/juice-shop-attacks.sh:/scripts/juice-shop-attacks.sh:ro
       - ./scripts/zap-scan.sh:/scripts/zap-scan.sh:ro
       - ./outputs:/outputs
