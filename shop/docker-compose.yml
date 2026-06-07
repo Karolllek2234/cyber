@@ -1,0 +1,78 @@
+services:
+  juice-shop:
+    build: ./juice-shop
+    container_name: juice-shop
+    ports:
+      - "3000:3000"
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx-proxy
+    environment:
+      SHOP_HTTP_PORT: ${SHOP_HTTP_PORT:-8080}
+    ports:
+      - "${SHOP_HTTP_PORT:-8080}:${SHOP_HTTP_PORT:-8080}"
+    volumes:
+      - ./nginx/default.conf.template:/etc/nginx/templates/default.conf.template:ro
+      - ./logs:/var/log/nginx
+    depends_on:
+      - juice-shop
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.1
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    ports:
+      - "9200:9200"
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.11.1
+    container_name: kibana
+    ports:
+      - "5601:5601"
+    volumes:
+      - ./kibana/kibana.yml:/usr/share/kibana/config/kibana.yml:ro
+    depends_on:
+      - elasticsearch
+      - mailpit
+
+  mailpit:
+    image: axllent/mailpit:latest
+    container_name: mailpit
+    ports:
+      - "8025:8025"
+    # SMTP :1025 reachable only as mailpit:1025 on the Compose network
+
+  elastic-setup:
+    image: curlimages/curl:8.5.0
+    container_name: elastic-setup
+    environment:
+      ALERT_STAFF_EMAIL: ${ALERT_STAFF_EMAIL:-staff@lab.local}
+      ALERT_WINDOW_MINUTES: ${ALERT_WINDOW_MINUTES:-5}
+      ALERT_MIN_FAILED: ${ALERT_MIN_FAILED:-10}
+      ALERT_CHECK_INTERVAL_SECONDS: ${ALERT_CHECK_INTERVAL_SECONDS:-60}
+      ALERT_COOLDOWN_MINUTES: ${ALERT_COOLDOWN_MINUTES:-15}
+    volumes:
+      - ./elasticsearch/ingest-pipeline.json:/setup/ingest-pipeline.json:ro
+      - ./elasticsearch/index-template.json:/setup/index-template.json:ro
+      - ./kibana/saved-objects.ndjson:/setup/kibana/saved-objects.ndjson:ro
+      - ./setup/elastic-setup.sh:/setup/elastic-setup.sh:ro
+    entrypoint: ["/bin/sh", "/setup/elastic-setup.sh"]
+    depends_on:
+      - elasticsearch
+      - kibana
+      - mailpit
+
+  filebeat:
+    image: docker.elastic.co/beats/filebeat:8.11.1
+    container_name: filebeat
+    user: root
+    command: filebeat -e --strict.perms=false
+    volumes:
+      - ./filebeat/filebeat.yml:/usr/share/filebeat/filebeat.yml
+      - ./logs:/var/log/nginx
+    depends_on:
+      elastic-setup:
+        condition: service_completed_successfully

@@ -1,0 +1,121 @@
+{
+  "description": "Parse nginx lab JSON access logs for Kibana filtering and analysis",
+  "processors": [
+    {
+      "json": {
+        "field": "message",
+        "target_field": "nginx"
+      }
+    },
+    {
+      "date": {
+        "field": "nginx.time_local",
+        "target_field": "@timestamp",
+        "formats": ["dd/MMM/yyyy:HH:mm:ss Z", "dd/MMM/yyyy:HH:mm:ss x"]
+      }
+    },
+    {
+      "set": {
+        "field": "source.ip",
+        "value": "{{nginx.remote_addr}}",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "http.request.method",
+        "value": "{{nginx.request_method}}",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "url.original",
+        "value": "{{nginx.request_uri}}",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "uri_parts": {
+        "field": "url.original",
+        "ignore_missing": true
+      }
+    },
+    {
+      "kv": {
+        "field": "url.query",
+        "field_split": "&",
+        "value_split": "=",
+        "target_field": "url.params",
+        "ignore_missing": true
+      }
+    },
+    {
+      "set": {
+        "field": "http.response.status_code",
+        "value": "{{nginx.status}}"
+      }
+    },
+    {
+      "convert": {
+        "field": "http.response.status_code",
+        "type": "integer",
+        "ignore_missing": true
+      }
+    },
+    {
+      "set": {
+        "field": "http.response.body.bytes",
+        "value": "{{nginx.body_bytes_sent}}"
+      }
+    },
+    {
+      "convert": {
+        "field": "http.response.body.bytes",
+        "type": "long",
+        "ignore_missing": true
+      }
+    },
+    {
+      "set": {
+        "field": "http.request.referrer",
+        "value": "{{nginx.http_referer}}",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "user_agent.original",
+        "value": "{{nginx.http_user_agent}}",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "http.request.headers.x_forwarded_for",
+        "value": "{{nginx.http_x_forwarded_for}}",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "event.dataset",
+        "value": "nginx.access"
+      }
+    },
+    {
+      "remove": {
+        "field": ["nginx", "message"],
+        "ignore_missing": true
+      }
+    }
+  ],
+  "on_failure": [
+    {
+      "set": {
+        "field": "error.message",
+        "value": "{{ _ingest.on_failure_message }}"
+      }
+    }
+  ]
+}

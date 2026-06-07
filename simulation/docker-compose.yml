@@ -1,0 +1,29 @@
+services:
+  user:
+    build:
+      context: ./user
+    container_name: user
+    depends_on:
+      - nginx
+    environment:
+      TARGET_URL: "http://nginx:${SHOP_HTTP_PORT:-8080}/"
+      USER_REQUEST_INTERVAL_SECONDS: ${USER_REQUEST_INTERVAL_SECONDS:-5}
+      SIMULATED_TRAFFIC_USER: ${SIMULATED_TRAFFIC_USER:-0}
+
+  attacker:
+    build:
+      context: ./attacker
+    container_name: attacker
+    depends_on:
+      - nginx
+      - user
+    environment:
+      ZAP_PORT: "8080"
+      TARGET_URL: "http://nginx:${SHOP_HTTP_PORT:-8080}/"
+      SIMULATED_TRAFFIC_ATTACKER: ${SIMULATED_TRAFFIC_ATTACKER:-60}
+      SIMULATED_TRAFFIC_ATTACKER_DELAY: ${SIMULATED_TRAFFIC_ATTACKER_DELAY:-60}
+      SIMULATED_TRAFFIC_TRIGGER: ${SIMULATED_TRAFFIC_TRIGGER:-false}
+    volumes:
+      - ./scripts/juice-shop-attacks.sh:/scripts/juice-shop-attacks.sh:ro
+      - ./scripts/zap-scan.sh:/scripts/zap-scan.sh:ro
+      - ./outputs:/outputs
