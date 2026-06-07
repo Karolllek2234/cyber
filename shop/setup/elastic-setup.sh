@@ -69,9 +69,9 @@ else
           "id": "nginx-lab-data-view",
           "title": "nginx-lab-*",
           "name": "nginx lab access logs",
-          "timeFieldName": "@timestamp"
-        },
-        "allowNoIndex": true
+          "timeFieldName": "@timestamp",
+          "allowNoIndex": true
+        }
       }'; then
       break
     fi
