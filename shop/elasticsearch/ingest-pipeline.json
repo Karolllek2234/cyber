@@ -47,8 +47,7 @@
         "field_split": "&",
         "value_split": "=",
         "target_field": "url.params",
-        "ignore_missing": true,
-        "decode_value": true
+        "ignore_missing": true
       }
     },
     {
