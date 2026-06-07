@@ -16,6 +16,7 @@ services:
       - ./nginx/default.conf.template:/etc/nginx/templates/default.conf.template:ro
       - ./logs:/var/log/nginx
       - ./juice-shop/ftp:/usr/share/nginx/html/ftp:ro
+      - ./nginx/ftp/index.html:/usr/share/nginx/html/ftp/index.html:ro
     depends_on:
       - juice-shop
 
