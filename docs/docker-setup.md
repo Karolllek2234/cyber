@@ -49,12 +49,16 @@ Then commit `shop/kibana/saved-objects.ndjson`.
 
 ## Error-rate email alerts
 
-Staff notifications use [Mailpit](https://github.com/axllent/mailpit) as a local inbox. The `lab-alerter` service polls `nginx-lab-*` every minute and sends email when, in the last **5 minutes** (configurable):
+Staff notifications use [Mailpit](https://github.com/axllent/mailpit) as a local inbox. A **Kibana Stack Alerting** rule (`lab-error-rate`, ES|QL) checks `nginx-lab-*` every minute and sends email when, in the last **5 minutes** (configurable):
 
 - failed requests (HTTP ≥ 400) **exceed** successful requests (2xx/3xx), and
 - failed count is at least **10** (configurable via `ALERT_MIN_FAILED`)
 
-Open the inbox at [http://localhost:8025](http://localhost:8025). Alert emails link to the **Request outcomes** Kibana dashboard.
+The rule and Mailpit email connector are installed by `elastic-setup` on stack startup. View or edit the rule under **Stack Management → Rules** (`Lab nginx error rate exceeds success`, id `a0000000-0000-4000-8000-000000000001`).
+
+Open the **staff inbox** on the host at [http://localhost:8025](http://localhost:8025). Alert emails link to the **Request outcomes** Kibana dashboard.
+
+Mailpit **SMTP** (`mailpit:1025`) is used by Kibana on the Docker Compose network only — it is not published to the host, avoiding conflicts with local mail daemons.
 
 To test, generate attack traffic (many 4xx/5xx responses help trigger an alert sooner):
 
@@ -62,7 +66,11 @@ To test, generate attack traffic (many 4xx/5xx responses help trigger an alert s
 ./simulation/scripts/run-juice-shop-attacks.sh
 ```
 
-Tune sensitivity in `.env` — see [docker-env.md](docker-env.md).
+Tune sensitivity in `.env` — see [docker-env.md](docker-env.md). After changing `ALERT_*` variables, re-run setup so the rule is updated:
+
+```bash
+docker compose run --rm elastic-setup
+```
 
 In **Discover**, select that data view. Each nginx access line is parsed into structured fields:
 
